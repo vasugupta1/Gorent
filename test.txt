@@ -1,0 +1,3 @@
+This is a test file for the Gorent torrent client.
+It contains multiple lines of text to ensure we have enough data to split into multiple torrent pieces for testing.
+Gorent will download this file piece by piece, verify the SHA-1 hash of each piece, and reconstruct the original file successfully.
