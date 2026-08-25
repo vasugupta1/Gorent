@@ -77,7 +77,6 @@ func requestPeersHttp(tf *TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
 	}
 
 	return peers.UnmarshalPeers([]byte(trackerResponse.Peers))
-
 }
 
 func RequestPeers(tf *TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
@@ -88,8 +87,8 @@ func RequestPeers(tf *TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
 	switch url.Scheme {
 	case "http", "https":
 		return requestPeersHttp(tf, peerId)
-	// case "udp":
-	// 	return requestPeersUdp(tf, peerId)
+	case "udp":
+		return requestPeersUdp(tf, peerId)
 	default:
 		return nil, fmt.Errorf("not supported scheme, %s", url.Scheme)
 	}
