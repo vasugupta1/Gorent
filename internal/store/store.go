@@ -200,12 +200,10 @@ func (s *Store) SetSetting(key, value string) error {
 }
 
 func (s *Store) ClearHistory() error {
-	// Using DELETE FROM is safer than DROP TABLE as it just removes data.
 	_, err := s.db.Exec("DELETE FROM torrents")
 	if err != nil {
 		return fmt.Errorf("failed to clear torrent history from database: %w", err)
 	}
-	// SQLite's VACUUM command reclaims space. Optional but good practice.
 	_, err = s.db.Exec("VACUUM")
 	return err
 }
@@ -216,7 +214,6 @@ func (s *Store) ResetSettings() error {
 	return err
 }
 
-// Close gracefully closes the database connection.
 func (s *Store) Close() error {
 	if s.db != nil {
 		return s.db.Close()

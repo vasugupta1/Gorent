@@ -1,7 +1,12 @@
 package p2p
 
 import (
+	"fmt"
+	"log"
+	"os"
+	"path/filepath"
 	"sync"
+	"time"
 
 	"github.com/vasugupta1/gorent/internal/bitfield"
 	"github.com/vasugupta1/gorent/internal/peers"
@@ -66,6 +71,10 @@ type TorrentSnapshot struct {
 	DownloadSpeed   float64
 }
 
+type StoreInterface interface {
+	UpdateTorrentProgress(t *Torrent) error
+}
+
 func (t *Torrent) GetStatus() TorrentSnapshot {
 	t.Mu.RLock()
 	defer t.Mu.RUnlock()
@@ -76,4 +85,54 @@ func (t *Torrent) GetStatus() TorrentSnapshot {
 		ActivePeers:     t.ActivePeers,
 		DownloadSpeed:   t.DownloadSpeed,
 	}
+}
+
+func (t *Torrent) startSpeedCalculator() {
+	ticker := time.NewTicker(2 * time.Second)
+	defer ticker.Stop()
+
+	for range ticker.C {
+		t.Mu.Lock()
+		if t.Status != "Downloading" {
+			t.DownloadSpeed = 0
+			t.lastBytesDownloaded = t.BytesDownloaded
+			t.Mu.Unlock()
+			continue
+		}
+
+		bytesSinceLastTick := t.BytesDownloaded - t.lastBytesDownloaded
+		t.DownloadSpeed = float64(bytesSinceLastTick) / 2
+		t.lastBytesDownloaded = t.BytesDownloaded
+		t.Mu.Unlock()
+	}
+}
+
+func (t *Torrent) DownloadTheFile(store StoreInterface) error {
+
+	filePath := filepath.Join(t.DownloadPath, t.Name)
+	log.Printf("Preparing to download file to: %s", filePath)
+
+	outFile, err := os.OpenFile(filePath, os.O_RDWR|os.O_CREATE, 0666)
+	if err != nil {
+		return fmt.Errorf("could not open output file: %w", err)
+	}
+
+	if err := outFile.Truncate(int64(t.Length)); err != nil {
+		outFile.Close() // Close the file on error
+		return fmt.Errorf("could not set file size: %w", err)
+	}
+	go t.startSpeedCalculator()
+	downloadErr := t.Download(store, outFile)
+
+	if closeErr := outFile.Close(); closeErr != nil {
+		log.Printf("Warning: failed to close the output file: %v", closeErr)
+	}
+
+	if downloadErr != nil {
+		return downloadErr
+	}
+
+	log.Println("Download finished successfully and file is now unlocked.")
+
+	return nil
 }

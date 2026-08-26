@@ -1,16 +1,22 @@
 package daemon
 
 import (
+	"crypto/rand"
 	"database/sql"
+	"errors"
 	"fmt"
 	"log"
 	"net"
 	"os"
+	"strings"
 	"sync"
 	"time"
 
+	dht "github.com/anacrolix/dht/v2"
 	"github.com/vasugupta1/gorent/internal/p2p"
+	"github.com/vasugupta1/gorent/internal/peers"
 	"github.com/vasugupta1/gorent/internal/store"
+	"github.com/vasugupta1/gorent/internal/torrent"
 )
 
 type AddTorrentArgs struct {
@@ -119,7 +125,10 @@ func NewServer(dbPath string, b Broadcaster) (*Server, error) {
 		if err != nil {
 			return nil, fmt.Errorf("failed to create UDP connection for DHT: %w", err)
 		}
-		dhtConfig := dht.ServerConfig{Conn: conn, StartingNodes: dht.GlobalBootstrapAddrs}
+		startingNodes := func() ([]dht.Addr, error) {
+			return dht.GlobalBootstrapAddrs("udp")
+		}
+		dhtConfig := dht.ServerConfig{Conn: conn, StartingNodes: startingNodes}
 		dhtServer, err = dht.NewServer(&dhtConfig)
 		if err != nil {
 			conn.Close()
@@ -147,4 +156,140 @@ func NewServer(dbPath string, b Broadcaster) (*Server, error) {
 	}
 
 	return server, nil
+}
+
+func (s *Server) AddTorrent(args *AddTorrentArgs, reply *AddTorrentReply) error {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+
+	log.Printf("Daemon: Received request to add torrent: %s", args.PathOrMagnet)
+
+	var tf torrent.TorrentFile
+	var err error
+
+	if strings.HasPrefix(args.PathOrMagnet, "magnet:") {
+		return errors.New("magnet links not yet supported")
+	} else {
+		tf, err = torrent.Open(args.PathOrMagnet)
+		if err != nil {
+			return fmt.Errorf("failed to process input: %w", err)
+		}
+	}
+
+	infoHashStr := fmt.Sprintf("%x", tf.InfoHash)
+	if _, ok := s.torrents[infoHashStr]; ok {
+		return errors.New("torrent is already being managed")
+	}
+
+	var peerId [20]byte
+	if _, err := rand.Read(peerId[:]); err != nil {
+		return err
+	}
+
+	peers, err := findPeers(tf, peerId)
+	if err != nil {
+		return err
+	}
+
+	if len(peers) <= 0 {
+		return errors.New("failed to get any peers for this torrent")
+	}
+
+	torrentJob := &p2p.Torrent{
+		Peers:        peers,
+		PeerID:       peerId,
+		InfoHash:     tf.InfoHash,
+		PieceHashes:  tf.PieceHashes,
+		PieceLength:  tf.PieceLength,
+		Length:       tf.Length,
+		Name:         tf.Name,
+		Announce:     tf.Announce,
+		DownloadPath: s.downloadPath,
+	}
+
+	if err := s.store.AddTorrent(torrentJob); err != nil {
+		return fmt.Errorf("failed to save torrent to database: %w", err)
+	}
+	s.torrents[infoHashStr] = torrentJob
+
+	go torrentJob.DownloadTheFile(s.store)
+
+	reply.InfoHash = infoHashStr
+	reply.Name = torrentJob.Name
+
+	return nil
+}
+
+func findPeers(tf torrent.TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
+	peers, err := findTrackerPeers(tf, peerId)
+	if err != nil {
+		return nil, err
+	}
+
+	if s.dhtEnabled && s.dht != nil {
+		dhtPeers, err := findTrackersPeersDHT(tf)
+	}
+	return peers, nil
+}
+
+func findTrackersPeersDHT(tf torrent.TorrentFile) ([]peers.Peer, error) {
+
+}
+
+func findTrackerPeers(tf torrent.TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
+
+	var trackerList []string
+	if len(tf.AnnounceList) > 0 {
+		trackerList = tf.AnnounceList
+	} else if tf.Announce != "" {
+		trackerList = []string{tf.Announce}
+	} else {
+		return nil, errors.New("no tracker URLs available for this torrent")
+	}
+
+	peerChan := make(chan peers.Peer)
+	var wg sync.WaitGroup
+
+	for _, trackerURL := range trackerList {
+		wg.Add(1)
+		go func(url string) {
+			defer wg.Done()
+			tempTF := tf
+			tempTF.Announce = url
+			trackerPeers, err := torrent.RequestPeers(&tempTF, peerId)
+			if err != nil {
+				log.Printf("Tracker %s failed: %v", url, err)
+				return
+			}
+			if len(trackerPeers) <= 0 {
+				log.Printf("No Trackers Peers %s found: %v", url, err)
+				return
+			}
+			for _, tp := range trackerPeers {
+				peerChan <- tp
+			}
+
+		}(trackerURL)
+	}
+
+	go func() {
+		wg.Wait()
+		close(peerChan)
+	}()
+
+	var deDupPeers []peers.Peer
+	peerMap := make(map[string]bool)
+	for p := range peerChan {
+		key := fmt.Sprintf("%s:%d", p.IP.String(), p.Port)
+		if !peerMap[key] {
+			peerMap[key] = true
+			deDupPeers = append(deDupPeers, p)
+		}
+	}
+
+	if len(deDupPeers) <= 0 {
+		return nil, errors.New("No peers found for any trackers")
+	}
+
+	return deDupPeers, nil
 }
