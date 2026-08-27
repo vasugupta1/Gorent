@@ -186,7 +186,7 @@ func (s *Server) AddTorrent(args *AddTorrentArgs, reply *AddTorrentReply) error 
 		return err
 	}
 
-	peers, err := findPeers(tf, peerId)
+	peers, err := findPeers(tf, peerId, s.dhtEnabled, s.dht)
 	if err != nil {
 		return err
 	}
@@ -220,23 +220,60 @@ func (s *Server) AddTorrent(args *AddTorrentArgs, reply *AddTorrentReply) error 
 	return nil
 }
 
-func findPeers(tf torrent.TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
-	peers, err := findTrackerPeers(tf, peerId)
+func findPeers(tf torrent.TorrentFile, peerId [20]byte, isDhtEnable bool, dht *dht.Server) ([]peers.Peer, error) {
+	peerChan := make(chan peers.Peer)
+	var wg sync.WaitGroup
+	defer close(peerChan)
+
+	err := findTrackerPeers(tf, peerId, peerChan, &wg)
 	if err != nil {
 		return nil, err
 	}
 
-	if s.dhtEnabled && s.dht != nil {
-		dhtPeers, err := findTrackersPeersDHT(tf)
+	if isDhtEnable && dht != nil {
+		err := findTrackersPeersDHT(dht, tf, peerId, peerChan, &wg)
+		if err != nil {
+			return nil, err
+		}
 	}
-	return peers, nil
+
+	go func() {
+		wg.Wait()
+		close(peerChan)
+	}()
+
+	return dedupAndConstructPeers(peerChan)
 }
 
-func findTrackersPeersDHT(tf torrent.TorrentFile) ([]peers.Peer, error) {
+func findTrackersPeersDHT(dht *dht.Server, tf torrent.TorrentFile, peerId [20]byte, peerChan chan peers.Peer, wg *sync.WaitGroup) error {
+	traversal, err := dht.AnnounceTraversal(tf.InfoHash)
+	if err != nil {
+		return err
+	}
 
+	timeout := time.After(15 * time.Second)
+	wg.Add(1)
+
+	go func() {
+		defer wg.Done()
+		defer traversal.Close()
+		for {
+			select {
+			case dhtPeer, ok := <-traversal.Peers:
+				if !ok {
+					return
+				}
+				peerChan <- peers.Peer{IP: dhtPeer.Addr.IP, Port: uint16(dhtPeer.Addr.Port)}
+			case <-timeout:
+				return
+			}
+		}
+	}()
+
+	return nil
 }
 
-func findTrackerPeers(tf torrent.TorrentFile, peerId [20]byte) ([]peers.Peer, error) {
+func findTrackerPeers(tf torrent.TorrentFile, peerId [20]byte, peerChan chan peers.Peer, wg *sync.WaitGroup) error {
 
 	var trackerList []string
 	if len(tf.AnnounceList) > 0 {
@@ -244,11 +281,8 @@ func findTrackerPeers(tf torrent.TorrentFile, peerId [20]byte) ([]peers.Peer, er
 	} else if tf.Announce != "" {
 		trackerList = []string{tf.Announce}
 	} else {
-		return nil, errors.New("no tracker URLs available for this torrent")
+		return errors.New("no tracker URLs available for this torrent")
 	}
-
-	peerChan := make(chan peers.Peer)
-	var wg sync.WaitGroup
 
 	for _, trackerURL := range trackerList {
 		wg.Add(1)
@@ -272,14 +306,13 @@ func findTrackerPeers(tf torrent.TorrentFile, peerId [20]byte) ([]peers.Peer, er
 		}(trackerURL)
 	}
 
-	go func() {
-		wg.Wait()
-		close(peerChan)
-	}()
+	return nil
+}
 
+func dedupAndConstructPeers(peersChan <-chan peers.Peer) ([]peers.Peer, error) {
 	var deDupPeers []peers.Peer
 	peerMap := make(map[string]bool)
-	for p := range peerChan {
+	for p := range peersChan {
 		key := fmt.Sprintf("%s:%d", p.IP.String(), p.Port)
 		if !peerMap[key] {
 			peerMap[key] = true
