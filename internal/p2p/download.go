@@ -1,6 +1,8 @@
 package p2p
 
 import (
+	"bytes"
+	"crypto/sha1"
 	"fmt"
 	"log"
 	"os"
@@ -251,7 +253,7 @@ func (t *Torrent) startDownloadWorker(peer peers.Peer, workQueue chan *pieceWork
 		select {
 		case pw, ok := <-workQueue:
 			if !ok {
-				// log.Printf("Work queue closed, worker for %s exiting", peer.IP)
+				log.Printf("Work queue closed, worker for %s exiting", peer.IP)
 				return
 			}
 
@@ -357,23 +359,31 @@ func (state *pieceProgress) readMessage() error {
 	}
 
 	switch msg.ID {
-	case client.Message.MsgUnChoke:
+	case client.MsgUnChoke:
 		state.client.Choked = false
-	case message.MsgChoke:
+	case client.MsgChoke:
 		state.client.Choked = true
-	case message.MsgHave:
-		index, err := message.ParseHave(msg)
+	case client.MsgHave:
+		index, err := client.ParseHave(msg)
 		if err != nil {
 			return err
 		}
 		state.client.Bitfield.SetPiece(index)
-	case message.MsgPiece:
-		n, err := message.ParsePiece(state.index, state.buf, msg)
+	case client.MsgPiece:
+		n, err := client.ParsePiece(state.index, state.buf, msg)
 		if err != nil {
 			return err
 		}
 		state.downloaded += n
 		state.backlog--
+	}
+	return nil
+}
+
+func checkIntegrity(pw *pieceWork, buf []byte) error {
+	hash := sha1.Sum(buf)
+	if !bytes.Equal(hash[:], pw.hash[:]) {
+		return fmt.Errorf("piece %d failed integrity check", pw.index)
 	}
 	return nil
 }
