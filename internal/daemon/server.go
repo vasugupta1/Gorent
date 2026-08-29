@@ -205,6 +205,7 @@ func (s *Server) AddTorrent(args *AddTorrentArgs, reply *AddTorrentReply) error 
 		Name:         tf.Name,
 		Announce:     tf.Announce,
 		DownloadPath: s.downloadPath,
+		MaxWorkers:   30,
 	}
 
 	if err := s.store.AddTorrent(torrentJob); err != nil {
@@ -212,7 +213,7 @@ func (s *Server) AddTorrent(args *AddTorrentArgs, reply *AddTorrentReply) error 
 	}
 	s.torrents[infoHashStr] = torrentJob
 
-	go torrentJob.DownloadTheFile(s.store)
+	go torrentJob.ImprovedDownloadTheFile(s.store)
 
 	reply.InfoHash = infoHashStr
 	reply.Name = torrentJob.Name
@@ -223,7 +224,6 @@ func (s *Server) AddTorrent(args *AddTorrentArgs, reply *AddTorrentReply) error 
 func findPeers(tf torrent.TorrentFile, peerId [20]byte, isDhtEnable bool, dht *dht.Server) ([]peers.Peer, error) {
 	peerChan := make(chan peers.Peer)
 	var wg sync.WaitGroup
-	defer close(peerChan)
 
 	err := findTrackerPeers(tf, peerId, peerChan, &wg)
 	if err != nil {

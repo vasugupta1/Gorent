@@ -81,24 +81,38 @@ func (t *Torrent) download(store StoreInterface, file *os.File) error {
 	}
 
 	workQueue := make(chan *pieceWork, len(t.PieceHashes))
+
+	go func() {
+		defer close(workQueue)
+		for index, hash := range t.PieceHashes {
+			if !t.OurBitfield.HasPiece(index) {
+				length := t.calculatePieceSize(index)
+				workQueue <- &pieceWork{index, hash, length}
+			}
+		}
+	}()
+
 	results := make(chan *pieceResult, len(t.PieceHashes))
 	done := make(chan struct{}, len(t.Peers))
 
-	for index, hash := range t.PieceHashes {
-		if !t.OurBitfield.HasPiece(index) {
-			length := t.calculatePieceSize(index)
-			workQueue <- &pieceWork{index, hash, length}
-		}
+	activeWorkers := 0
+	var wg sync.WaitGroup
+	for _, peer := range t.Peers {
+		wg.Add(1)
+		go func(p peers.Peer) {
+			defer wg.Done()
+			activeWorkers++
+			t.Mu.Lock()
+			t.ActivePeers++
+			t.Mu.Unlock()
+			t.startDownloadWorker(p, workQueue, results, done)
+		}(peer)
 	}
 
-	activeWorkers := 0
-	for _, peer := range t.Peers {
-		go t.startDownloadWorker(peer, workQueue, results, done)
-		activeWorkers++
-		t.Mu.Lock()
-		t.ActivePeers++
-		t.Mu.Unlock()
-	}
+	go func() {
+		wg.Wait()
+		close(results)
+	}()
 
 	var resultsChan <-chan *pieceResult = results
 	var isPaused bool = false
@@ -207,9 +221,6 @@ func (t *Torrent) download(store StoreInterface, file *os.File) error {
 			actualBytesDownloaded = currentDownloaded
 		}
 	}
-
-	close(workQueue)
-	close(progressUpdates)
 	dbUpdateWg.Wait()
 
 	if donePieces < totalPieces {

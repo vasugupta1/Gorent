@@ -39,6 +39,7 @@ type Torrent struct {
 	DownloadSpeed       float64
 	OurBitfield         bitfield.Bitfield
 	DownloadPath        string
+	MaxWorkers          int
 }
 
 type pieceWork struct {
