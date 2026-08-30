@@ -1,0 +1,1583 @@
+2026/08/30 17:13:35 Timeout waiting for trackers. Proceeding with found peers...
+2026/08/30 17:13:35 Found 700 peers. Attempting to fetch metadata...
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Successfully fetched metadata from 46.232.210.164:58021
+2026/08/30 17:13:35 Parsed Metadata: Name=lanterns.2026.s01e01.1080p.web.h264-cakes[EZTVx.to].mkv, Length=2431169756, PieceLength=2373632
+2026/08/30 17:13:35 Starting concurrent download of 1025 pieces...
+2026/08/30 17:13:35 Launching 700 workers...
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 3
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received piece 0 (size: 16384)
+2026/08/30 17:13:35 Received piece 1 (size: 4240)
+2026/08/30 17:13:35 Metadata successfully downloaded and verified
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:35 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:35 Requested 2 pieces
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:36 Requested 2 pieces
+2026/08/30 17:13:36 Worker 221.227.49.198:20013 failed piece 4: read tcp 192.168.1.251:63486->221.227.49.198:20013: read: connection reset by peer
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:36 Requested 2 pieces
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:36 Requested 2 pieces
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:36 Requested 2 pieces
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:36 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:36 Requested 2 pieces
+2026/08/30 17:13:36 Downloaded piece 1/1025 (0.10%)
+2026/08/30 17:13:36 Received piece 0 (size: 16384)
+2026/08/30 17:13:36 Received piece 1 (size: 4240)
+2026/08/30 17:13:36 Metadata successfully downloaded and verified
+2026/08/30 17:13:37 Received piece 0 (size: 16384)
+2026/08/30 17:13:37 Received piece 1 (size: 4240)
+2026/08/30 17:13:37 Metadata successfully downloaded and verified
+2026/08/30 17:13:37 Received piece 0 (size: 16384)
+2026/08/30 17:13:37 Received piece 1 (size: 4240)
+2026/08/30 17:13:37 Metadata successfully downloaded and verified
+2026/08/30 17:13:37 Downloaded piece 2/1025 (0.20%)
+2026/08/30 17:13:37 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:13:37 Requested 2 pieces
+2026/08/30 17:13:38 Downloaded piece 3/1025 (0.29%)
+2026/08/30 17:13:38 Worker 185.203.56.69:19139 failed piece 1: EOF
+2026/08/30 17:13:39 Downloaded piece 4/1025 (0.39%)
+2026/08/30 17:13:40 Worker 93.103.237.129:63769 failed piece 3: EOF
+2026/08/30 17:13:40 Received piece 0 (size: 16384)
+2026/08/30 17:13:40 Downloaded piece 5/1025 (0.49%)
+2026/08/30 17:13:41 Received piece 1 (size: 4240)
+2026/08/30 17:13:41 Metadata successfully downloaded and verified
+2026/08/30 17:13:41 Downloaded piece 6/1025 (0.59%)
+2026/08/30 17:13:43 Downloaded piece 7/1025 (0.68%)
+2026/08/30 17:13:44 Downloaded piece 8/1025 (0.78%)
+2026/08/30 17:13:45 Downloaded piece 9/1025 (0.88%)
+2026/08/30 17:13:46 Downloaded piece 10/1025 (0.98%)
+2026/08/30 17:13:47 Downloaded piece 11/1025 (1.07%)
+2026/08/30 17:13:48 Downloaded piece 12/1025 (1.17%)
+2026/08/30 17:13:49 Downloaded piece 13/1025 (1.27%)
+2026/08/30 17:13:50 Downloaded piece 14/1025 (1.37%)
+2026/08/30 17:13:51 Downloaded piece 15/1025 (1.46%)
+2026/08/30 17:13:52 Downloaded piece 16/1025 (1.56%)
+2026/08/30 17:13:53 Downloaded piece 17/1025 (1.66%)
+2026/08/30 17:13:54 Downloaded piece 18/1025 (1.76%)
+2026/08/30 17:13:55 Downloaded piece 19/1025 (1.85%)
+2026/08/30 17:13:57 Downloaded piece 20/1025 (1.95%)
+2026/08/30 17:13:58 Downloaded piece 21/1025 (2.05%)
+2026/08/30 17:13:59 Downloaded piece 22/1025 (2.15%)
+2026/08/30 17:14:00 Downloaded piece 23/1025 (2.24%)
+2026/08/30 17:14:01 Downloaded piece 24/1025 (2.34%)
+2026/08/30 17:14:02 Downloaded piece 25/1025 (2.44%)
+2026/08/30 17:14:03 Downloaded piece 26/1025 (2.54%)
+2026/08/30 17:14:04 Downloaded piece 27/1025 (2.63%)
+2026/08/30 17:14:05 Downloaded piece 28/1025 (2.73%)
+2026/08/30 17:14:06 Downloaded piece 29/1025 (2.83%)
+2026/08/30 17:14:07 Downloaded piece 30/1025 (2.93%)
+2026/08/30 17:14:08 Downloaded piece 31/1025 (3.02%)
+2026/08/30 17:14:09 Downloaded piece 32/1025 (3.12%)
+2026/08/30 17:14:10 Downloaded piece 33/1025 (3.22%)
+2026/08/30 17:14:11 Downloaded piece 34/1025 (3.32%)
+2026/08/30 17:14:12 Downloaded piece 35/1025 (3.41%)
+2026/08/30 17:14:13 Downloaded piece 36/1025 (3.51%)
+2026/08/30 17:14:14 Downloaded piece 37/1025 (3.61%)
+2026/08/30 17:14:15 Downloaded piece 38/1025 (3.71%)
+2026/08/30 17:14:16 Downloaded piece 39/1025 (3.80%)
+2026/08/30 17:14:17 Downloaded piece 40/1025 (3.90%)
+2026/08/30 17:14:18 Downloaded piece 41/1025 (4.00%)
+2026/08/30 17:14:19 Downloaded piece 42/1025 (4.10%)
+2026/08/30 17:14:20 Downloaded piece 43/1025 (4.20%)
+2026/08/30 17:14:21 Downloaded piece 44/1025 (4.29%)
+2026/08/30 17:14:22 Downloaded piece 45/1025 (4.39%)
+2026/08/30 17:14:23 Downloaded piece 46/1025 (4.49%)
+2026/08/30 17:14:24 Downloaded piece 47/1025 (4.59%)
+2026/08/30 17:14:25 Downloaded piece 48/1025 (4.68%)
+2026/08/30 17:14:26 Downloaded piece 49/1025 (4.78%)
+2026/08/30 17:14:27 Downloaded piece 50/1025 (4.88%)
+2026/08/30 17:14:29 Downloaded piece 51/1025 (4.98%)
+2026/08/30 17:14:30 Downloaded piece 52/1025 (5.07%)
+2026/08/30 17:14:32 Downloaded piece 53/1025 (5.17%)
+2026/08/30 17:14:33 Downloaded piece 54/1025 (5.27%)
+2026/08/30 17:14:34 Downloaded piece 55/1025 (5.37%)
+2026/08/30 17:14:35 Worker 81.104.27.20:39722 failed piece 2: read tcp 192.168.1.251:63991->81.104.27.20:39722: i/o timeout
+2026/08/30 17:14:36 Downloaded piece 56/1025 (5.46%)
+2026/08/30 17:14:38 Downloaded piece 57/1025 (5.56%)
+2026/08/30 17:14:39 Downloaded piece 58/1025 (5.66%)
+2026/08/30 17:14:40 Downloaded piece 59/1025 (5.76%)
+2026/08/30 17:14:42 Downloaded piece 60/1025 (5.85%)
+2026/08/30 17:14:43 Downloaded piece 61/1025 (5.95%)
+2026/08/30 17:14:44 Downloaded piece 62/1025 (6.05%)
+2026/08/30 17:14:45 Downloaded piece 63/1025 (6.15%)
+2026/08/30 17:14:46 Timeout waiting for trackers. Proceeding with found peers...
+2026/08/30 17:14:46 Found 141 peers. Attempting to fetch metadata...
+2026/08/30 17:14:46 Received extension handshake. Metadata size: 3050, ut_metadata ID: 2
+2026/08/30 17:14:46 Requested 1 pieces
+2026/08/30 17:14:46 Received piece 0 (size: 3050)
+2026/08/30 17:14:46 Metadata successfully downloaded and verified
+2026/08/30 17:14:46 Successfully fetched metadata from 37.48.89.197:39229
+2026/08/30 17:14:46 Parsed Metadata: Name=www.UIndex.org    -    Insidious The Last Key 2018 REPACK 1080p BluRay DDP 5 1 10bit H 265-iVy, Length=0, PieceLength=8388608
+2026/08/30 17:14:46 Starting concurrent download of 130 pieces...
+2026/08/30 17:14:46 Launching 141 workers...
+2026/08/30 17:14:46 Received extension handshake. Metadata size: 3050, ut_metadata ID: 2
+2026/08/30 17:14:46 Requested 1 pieces
+2026/08/30 17:14:46 Received piece 0 (size: 3050)
+2026/08/30 17:14:46 Metadata successfully downloaded and verified
+2026/08/30 17:14:46 Received extension handshake. Metadata size: 3050, ut_metadata ID: 2
+2026/08/30 17:14:46 Requested 1 pieces
+2026/08/30 17:14:46 Received piece 0 (size: 3050)
+2026/08/30 17:14:46 Metadata successfully downloaded and verified
+2026/08/30 17:14:46 Received extension handshake. Metadata size: 3050, ut_metadata ID: 2
+2026/08/30 17:14:46 Received extension handshake. Metadata size: 3050, ut_metadata ID: 2
+2026/08/30 17:14:46 Requested 1 pieces
+2026/08/30 17:14:46 Requested 1 pieces
+2026/08/30 17:14:46 Received extension handshake. Metadata size: 3050, ut_metadata ID: 2
+2026/08/30 17:14:46 Requested 1 pieces
+2026/08/30 17:14:46 Received piece 0 (size: 3050)
+2026/08/30 17:14:46 Metadata successfully downloaded and verified
+2026/08/30 17:14:46 Received piece 0 (size: 3050)
+2026/08/30 17:14:46 Metadata successfully downloaded and verified
+2026/08/30 17:14:47 Received piece 0 (size: 3050)
+2026/08/30 17:14:47 Metadata successfully downloaded and verified
+2026/08/30 17:14:47 Downloaded piece 64/1025 (6.24%)
+2026/08/30 17:14:49 Downloaded piece 65/1025 (6.34%)
+2026/08/30 17:14:50 Downloaded piece 66/1025 (6.44%)
+2026/08/30 17:14:51 Downloaded piece 67/1025 (6.54%)
+2026/08/30 17:14:52 Downloaded piece 68/1025 (6.63%)
+2026/08/30 17:14:54 Downloaded piece 69/1025 (6.73%)
+2026/08/30 17:14:55 Downloaded piece 70/1025 (6.83%)
+2026/08/30 17:14:57 Downloaded piece 71/1025 (6.93%)
+2026/08/30 17:14:59 Downloaded piece 72/1025 (7.02%)
+2026/08/30 17:15:00 Downloaded piece 73/1025 (7.12%)
+2026/08/30 17:15:01 Downloaded piece 74/1025 (7.22%)
+2026/08/30 17:15:02 Downloaded piece 75/1025 (7.32%)
+2026/08/30 17:15:03 Downloaded piece 76/1025 (7.41%)
+2026/08/30 17:15:04 Downloaded piece 77/1025 (7.51%)
+2026/08/30 17:15:05 Downloaded piece 78/1025 (7.61%)
+2026/08/30 17:15:06 Downloaded piece 79/1025 (7.71%)
+2026/08/30 17:15:07 Downloaded piece 80/1025 (7.80%)
+2026/08/30 17:15:08 Downloaded piece 81/1025 (7.90%)
+2026/08/30 17:15:09 Downloaded piece 82/1025 (8.00%)
+2026/08/30 17:15:10 Downloaded piece 83/1025 (8.10%)
+2026/08/30 17:15:11 Downloaded piece 84/1025 (8.20%)
+2026/08/30 17:15:13 Downloaded piece 85/1025 (8.29%)
+2026/08/30 17:15:14 Downloaded piece 86/1025 (8.39%)
+2026/08/30 17:15:15 Downloaded piece 87/1025 (8.49%)
+2026/08/30 17:15:16 Downloaded piece 88/1025 (8.59%)
+2026/08/30 17:15:17 Downloaded piece 89/1025 (8.68%)
+2026/08/30 17:15:18 Downloaded piece 90/1025 (8.78%)
+2026/08/30 17:15:18 Downloaded piece 91/1025 (8.88%)
+2026/08/30 17:15:19 Downloaded piece 92/1025 (8.98%)
+2026/08/30 17:15:20 Downloaded piece 93/1025 (9.07%)
+2026/08/30 17:15:21 Downloaded piece 94/1025 (9.17%)
+2026/08/30 17:15:22 Downloaded piece 95/1025 (9.27%)
+2026/08/30 17:15:23 Downloaded piece 96/1025 (9.37%)
+2026/08/30 17:15:24 Downloaded piece 97/1025 (9.46%)
+2026/08/30 17:15:25 Downloaded piece 98/1025 (9.56%)
+2026/08/30 17:15:27 Downloaded piece 99/1025 (9.66%)
+2026/08/30 17:15:28 Downloaded piece 100/1025 (9.76%)
+2026/08/30 17:15:29 Downloaded piece 101/1025 (9.85%)
+2026/08/30 17:15:30 Downloaded piece 102/1025 (9.95%)
+2026/08/30 17:15:31 Downloaded piece 103/1025 (10.05%)
+2026/08/30 17:15:32 Downloaded piece 104/1025 (10.15%)
+2026/08/30 17:15:33 Downloaded piece 105/1025 (10.24%)
+2026/08/30 17:15:34 Downloaded piece 106/1025 (10.34%)
+2026/08/30 17:15:34 Downloaded piece 107/1025 (10.44%)
+2026/08/30 17:15:35 Downloaded piece 108/1025 (10.54%)
+2026/08/30 17:15:37 Downloaded piece 109/1025 (10.63%)
+2026/08/30 17:15:38 Downloaded piece 110/1025 (10.73%)
+2026/08/30 17:15:38 Downloaded piece 111/1025 (10.83%)
+2026/08/30 17:15:39 Downloaded piece 112/1025 (10.93%)
+2026/08/30 17:15:41 Downloaded piece 113/1025 (11.02%)
+2026/08/30 17:15:42 Downloaded piece 114/1025 (11.12%)
+2026/08/30 17:15:43 Downloaded piece 115/1025 (11.22%)
+2026/08/30 17:15:44 Downloaded piece 116/1025 (11.32%)
+2026/08/30 17:15:45 Downloaded piece 117/1025 (11.41%)
+2026/08/30 17:15:46 Downloaded piece 118/1025 (11.51%)
+2026/08/30 17:15:46 Worker 37.48.89.197:39229 failed piece 0: read tcp 192.168.1.251:64384->37.48.89.197:39229: i/o timeout
+2026/08/30 17:15:47 Downloaded piece 119/1025 (11.61%)
+2026/08/30 17:15:47 Downloaded piece 120/1025 (11.71%)
+2026/08/30 17:15:48 Downloaded piece 121/1025 (11.80%)
+2026/08/30 17:15:50 Downloaded piece 122/1025 (11.90%)
+2026/08/30 17:15:50 Downloaded piece 123/1025 (12.00%)
+2026/08/30 17:15:51 Downloaded piece 124/1025 (12.10%)
+2026/08/30 17:15:52 Downloaded piece 125/1025 (12.20%)
+2026/08/30 17:15:53 Downloaded piece 126/1025 (12.29%)
+2026/08/30 17:15:54 Downloaded piece 127/1025 (12.39%)
+2026/08/30 17:15:55 Downloaded piece 128/1025 (12.49%)
+2026/08/30 17:15:56 Downloaded piece 129/1025 (12.59%)
+2026/08/30 17:15:57 Downloaded piece 130/1025 (12.68%)
+2026/08/30 17:15:58 Downloaded piece 131/1025 (12.78%)
+2026/08/30 17:15:59 Downloaded piece 132/1025 (12.88%)
+2026/08/30 17:16:01 Downloaded piece 133/1025 (12.98%)
+2026/08/30 17:16:02 Downloaded piece 134/1025 (13.07%)
+2026/08/30 17:16:03 Downloaded piece 135/1025 (13.17%)
+2026/08/30 17:16:04 Downloaded piece 136/1025 (13.27%)
+2026/08/30 17:16:05 Downloaded piece 137/1025 (13.37%)
+2026/08/30 17:16:05 Downloaded piece 138/1025 (13.46%)
+2026/08/30 17:16:06 Downloaded piece 139/1025 (13.56%)
+2026/08/30 17:16:07 Downloaded piece 140/1025 (13.66%)
+2026/08/30 17:16:08 Downloaded piece 141/1025 (13.76%)
+2026/08/30 17:16:09 Downloaded piece 142/1025 (13.85%)
+2026/08/30 17:16:10 Downloaded piece 143/1025 (13.95%)
+2026/08/30 17:16:11 Downloaded piece 144/1025 (14.05%)
+2026/08/30 17:16:12 Downloaded piece 145/1025 (14.15%)
+2026/08/30 17:16:13 Downloaded piece 146/1025 (14.24%)
+2026/08/30 17:16:14 Downloaded piece 147/1025 (14.34%)
+2026/08/30 17:16:15 Downloaded piece 148/1025 (14.44%)
+2026/08/30 17:16:16 Downloaded piece 149/1025 (14.54%)
+2026/08/30 17:16:17 Downloaded piece 150/1025 (14.63%)
+2026/08/30 17:16:18 Downloaded piece 151/1025 (14.73%)
+2026/08/30 17:16:19 Downloaded piece 152/1025 (14.83%)
+2026/08/30 17:16:20 Downloaded piece 153/1025 (14.93%)
+2026/08/30 17:16:21 Downloaded piece 154/1025 (15.02%)
+2026/08/30 17:16:22 Downloaded piece 155/1025 (15.12%)
+2026/08/30 17:16:23 Downloaded piece 156/1025 (15.22%)
+2026/08/30 17:16:24 Downloaded piece 157/1025 (15.32%)
+2026/08/30 17:16:25 Downloaded piece 158/1025 (15.41%)
+2026/08/30 17:16:26 Downloaded piece 159/1025 (15.51%)
+2026/08/30 17:16:26 Downloaded piece 160/1025 (15.61%)
+2026/08/30 17:16:27 Downloaded piece 161/1025 (15.71%)
+2026/08/30 17:16:28 Downloaded piece 162/1025 (15.80%)
+2026/08/30 17:16:29 Downloaded piece 163/1025 (15.90%)
+2026/08/30 17:16:30 Downloaded piece 164/1025 (16.00%)
+2026/08/30 17:16:31 Downloaded piece 165/1025 (16.10%)
+2026/08/30 17:16:32 Downloaded piece 166/1025 (16.20%)
+2026/08/30 17:16:33 Downloaded piece 167/1025 (16.29%)
+2026/08/30 17:16:34 Downloaded piece 168/1025 (16.39%)
+2026/08/30 17:16:35 Downloaded piece 169/1025 (16.49%)
+2026/08/30 17:16:36 Downloaded piece 170/1025 (16.59%)
+2026/08/30 17:16:37 Downloaded piece 171/1025 (16.68%)
+2026/08/30 17:16:38 Downloaded piece 172/1025 (16.78%)
+2026/08/30 17:16:39 Downloaded piece 173/1025 (16.88%)
+2026/08/30 17:16:40 Downloaded piece 174/1025 (16.98%)
+2026/08/30 17:16:41 Downloaded piece 175/1025 (17.07%)
+2026/08/30 17:16:42 Downloaded piece 176/1025 (17.17%)
+2026/08/30 17:16:43 Downloaded piece 177/1025 (17.27%)
+2026/08/30 17:16:44 Downloaded piece 178/1025 (17.37%)
+2026/08/30 17:16:45 Downloaded piece 179/1025 (17.46%)
+2026/08/30 17:16:46 Downloaded piece 180/1025 (17.56%)
+2026/08/30 17:16:47 Downloaded piece 181/1025 (17.66%)
+2026/08/30 17:16:48 Downloaded piece 182/1025 (17.76%)
+2026/08/30 17:16:49 Downloaded piece 183/1025 (17.85%)
+2026/08/30 17:16:50 Downloaded piece 184/1025 (17.95%)
+2026/08/30 17:16:52 Downloaded piece 185/1025 (18.05%)
+2026/08/30 17:16:53 Downloaded piece 186/1025 (18.15%)
+2026/08/30 17:16:54 Downloaded piece 187/1025 (18.24%)
+2026/08/30 17:16:55 Downloaded piece 188/1025 (18.34%)
+2026/08/30 17:16:56 Downloaded piece 189/1025 (18.44%)
+2026/08/30 17:16:57 Downloaded piece 190/1025 (18.54%)
+2026/08/30 17:16:58 Downloaded piece 191/1025 (18.63%)
+2026/08/30 17:16:59 Downloaded piece 192/1025 (18.73%)
+2026/08/30 17:17:00 Downloaded piece 193/1025 (18.83%)
+2026/08/30 17:17:01 Downloaded piece 194/1025 (18.93%)
+2026/08/30 17:17:02 Downloaded piece 195/1025 (19.02%)
+2026/08/30 17:17:03 Downloaded piece 196/1025 (19.12%)
+2026/08/30 17:17:03 Downloaded piece 197/1025 (19.22%)
+2026/08/30 17:17:04 Downloaded piece 198/1025 (19.32%)
+2026/08/30 17:17:05 Downloaded piece 199/1025 (19.41%)
+2026/08/30 17:17:06 Downloaded piece 200/1025 (19.51%)
+2026/08/30 17:17:07 Downloaded piece 201/1025 (19.61%)
+2026/08/30 17:17:08 Downloaded piece 202/1025 (19.71%)
+2026/08/30 17:17:10 Downloaded piece 203/1025 (19.80%)
+2026/08/30 17:17:11 Downloaded piece 204/1025 (19.90%)
+2026/08/30 17:17:12 Downloaded piece 205/1025 (20.00%)
+2026/08/30 17:17:13 Downloaded piece 206/1025 (20.10%)
+2026/08/30 17:17:14 Downloaded piece 207/1025 (20.20%)
+2026/08/30 17:17:15 Downloaded piece 208/1025 (20.29%)
+2026/08/30 17:17:16 Downloaded piece 209/1025 (20.39%)
+2026/08/30 17:17:17 Downloaded piece 210/1025 (20.49%)
+2026/08/30 17:17:18 Downloaded piece 211/1025 (20.59%)
+2026/08/30 17:17:19 Downloaded piece 212/1025 (20.68%)
+2026/08/30 17:17:20 Downloaded piece 213/1025 (20.78%)
+2026/08/30 17:17:21 Downloaded piece 214/1025 (20.88%)
+2026/08/30 17:17:22 Downloaded piece 215/1025 (20.98%)
+2026/08/30 17:17:23 Downloaded piece 216/1025 (21.07%)
+2026/08/30 17:17:24 Downloaded piece 217/1025 (21.17%)
+2026/08/30 17:17:25 Downloaded piece 218/1025 (21.27%)
+2026/08/30 17:17:26 Downloaded piece 219/1025 (21.37%)
+2026/08/30 17:17:27 Downloaded piece 220/1025 (21.46%)
+2026/08/30 17:17:28 Downloaded piece 221/1025 (21.56%)
+2026/08/30 17:17:29 Downloaded piece 222/1025 (21.66%)
+2026/08/30 17:17:30 Downloaded piece 223/1025 (21.76%)
+2026/08/30 17:17:31 Downloaded piece 224/1025 (21.85%)
+2026/08/30 17:17:32 Downloaded piece 225/1025 (21.95%)
+2026/08/30 17:17:33 Downloaded piece 226/1025 (22.05%)
+2026/08/30 17:17:34 Downloaded piece 227/1025 (22.15%)
+2026/08/30 17:17:35 Downloaded piece 228/1025 (22.24%)
+2026/08/30 17:17:36 Downloaded piece 229/1025 (22.34%)
+2026/08/30 17:17:37 Downloaded piece 230/1025 (22.44%)
+2026/08/30 17:17:38 Downloaded piece 231/1025 (22.54%)
+2026/08/30 17:17:39 Downloaded piece 232/1025 (22.63%)
+2026/08/30 17:17:40 Downloaded piece 233/1025 (22.73%)
+2026/08/30 17:17:41 Downloaded piece 234/1025 (22.83%)
+2026/08/30 17:17:42 Downloaded piece 235/1025 (22.93%)
+2026/08/30 17:17:43 Downloaded piece 236/1025 (23.02%)
+2026/08/30 17:17:44 Downloaded piece 237/1025 (23.12%)
+2026/08/30 17:17:45 Downloaded piece 238/1025 (23.22%)
+2026/08/30 17:17:46 Downloaded piece 239/1025 (23.32%)
+2026/08/30 17:17:47 Downloaded piece 240/1025 (23.41%)
+2026/08/30 17:17:48 Downloaded piece 241/1025 (23.51%)
+2026/08/30 17:17:49 Downloaded piece 242/1025 (23.61%)
+2026/08/30 17:17:50 Downloaded piece 243/1025 (23.71%)
+2026/08/30 17:17:51 Downloaded piece 244/1025 (23.80%)
+2026/08/30 17:17:52 Downloaded piece 245/1025 (23.90%)
+2026/08/30 17:17:53 Downloaded piece 246/1025 (24.00%)
+2026/08/30 17:17:54 Downloaded piece 247/1025 (24.10%)
+2026/08/30 17:17:55 Downloaded piece 248/1025 (24.20%)
+2026/08/30 17:17:56 Downloaded piece 249/1025 (24.29%)
+2026/08/30 17:17:57 Downloaded piece 250/1025 (24.39%)
+2026/08/30 17:17:59 Downloaded piece 251/1025 (24.49%)
+2026/08/30 17:18:00 Downloaded piece 252/1025 (24.59%)
+2026/08/30 17:18:01 Downloaded piece 253/1025 (24.68%)
+2026/08/30 17:18:02 Downloaded piece 254/1025 (24.78%)
+2026/08/30 17:18:03 Downloaded piece 255/1025 (24.88%)
+2026/08/30 17:18:04 Downloaded piece 256/1025 (24.98%)
+2026/08/30 17:18:05 Downloaded piece 257/1025 (25.07%)
+2026/08/30 17:18:06 Downloaded piece 258/1025 (25.17%)
+2026/08/30 17:18:07 Downloaded piece 259/1025 (25.27%)
+2026/08/30 17:18:08 Downloaded piece 260/1025 (25.37%)
+2026/08/30 17:18:09 Downloaded piece 261/1025 (25.46%)
+2026/08/30 17:18:10 Downloaded piece 262/1025 (25.56%)
+2026/08/30 17:18:11 Downloaded piece 263/1025 (25.66%)
+2026/08/30 17:18:12 Downloaded piece 264/1025 (25.76%)
+2026/08/30 17:18:13 Downloaded piece 265/1025 (25.85%)
+2026/08/30 17:18:14 Downloaded piece 266/1025 (25.95%)
+2026/08/30 17:18:15 Downloaded piece 267/1025 (26.05%)
+2026/08/30 17:18:16 Downloaded piece 268/1025 (26.15%)
+2026/08/30 17:18:17 Downloaded piece 269/1025 (26.24%)
+2026/08/30 17:18:18 Downloaded piece 270/1025 (26.34%)
+2026/08/30 17:18:19 Downloaded piece 271/1025 (26.44%)
+2026/08/30 17:18:20 Downloaded piece 272/1025 (26.54%)
+2026/08/30 17:18:22 Downloaded piece 273/1025 (26.63%)
+2026/08/30 17:18:23 Downloaded piece 274/1025 (26.73%)
+2026/08/30 17:18:24 Downloaded piece 275/1025 (26.83%)
+2026/08/30 17:18:25 Downloaded piece 276/1025 (26.93%)
+2026/08/30 17:18:26 Downloaded piece 277/1025 (27.02%)
+2026/08/30 17:18:27 Downloaded piece 278/1025 (27.12%)
+2026/08/30 17:18:28 Downloaded piece 279/1025 (27.22%)
+2026/08/30 17:18:29 Downloaded piece 280/1025 (27.32%)
+2026/08/30 17:18:29 Downloaded piece 281/1025 (27.41%)
+2026/08/30 17:18:30 Downloaded piece 282/1025 (27.51%)
+2026/08/30 17:18:31 Downloaded piece 283/1025 (27.61%)
+2026/08/30 17:18:32 Downloaded piece 284/1025 (27.71%)
+2026/08/30 17:18:33 Downloaded piece 285/1025 (27.80%)
+2026/08/30 17:18:35 Downloaded piece 286/1025 (27.90%)
+2026/08/30 17:18:36 Downloaded piece 287/1025 (28.00%)
+2026/08/30 17:18:37 Downloaded piece 288/1025 (28.10%)
+2026/08/30 17:18:37 Downloaded piece 289/1025 (28.20%)
+2026/08/30 17:18:38 Downloaded piece 290/1025 (28.29%)
+2026/08/30 17:18:39 Downloaded piece 291/1025 (28.39%)
+2026/08/30 17:18:40 Downloaded piece 292/1025 (28.49%)
+2026/08/30 17:18:41 Downloaded piece 293/1025 (28.59%)
+2026/08/30 17:18:42 Downloaded piece 294/1025 (28.68%)
+2026/08/30 17:18:43 Downloaded piece 295/1025 (28.78%)
+2026/08/30 17:18:44 Downloaded piece 296/1025 (28.88%)
+2026/08/30 17:18:45 Downloaded piece 297/1025 (28.98%)
+2026/08/30 17:18:46 Downloaded piece 298/1025 (29.07%)
+2026/08/30 17:18:47 Downloaded piece 299/1025 (29.17%)
+2026/08/30 17:18:48 Downloaded piece 300/1025 (29.27%)
+2026/08/30 17:18:49 Downloaded piece 301/1025 (29.37%)
+2026/08/30 17:18:50 Downloaded piece 302/1025 (29.46%)
+2026/08/30 17:18:51 Downloaded piece 303/1025 (29.56%)
+2026/08/30 17:18:52 Downloaded piece 304/1025 (29.66%)
+2026/08/30 17:18:53 Downloaded piece 305/1025 (29.76%)
+2026/08/30 17:18:54 Downloaded piece 306/1025 (29.85%)
+2026/08/30 17:18:55 Downloaded piece 307/1025 (29.95%)
+2026/08/30 17:18:56 Downloaded piece 308/1025 (30.05%)
+2026/08/30 17:18:57 Downloaded piece 309/1025 (30.15%)
+2026/08/30 17:18:58 Downloaded piece 310/1025 (30.24%)
+2026/08/30 17:18:59 Downloaded piece 311/1025 (30.34%)
+2026/08/30 17:19:00 Downloaded piece 312/1025 (30.44%)
+2026/08/30 17:19:01 Downloaded piece 313/1025 (30.54%)
+2026/08/30 17:19:02 Downloaded piece 314/1025 (30.63%)
+2026/08/30 17:19:03 Downloaded piece 315/1025 (30.73%)
+2026/08/30 17:19:04 Downloaded piece 316/1025 (30.83%)
+2026/08/30 17:19:05 Downloaded piece 317/1025 (30.93%)
+2026/08/30 17:19:06 Downloaded piece 318/1025 (31.02%)
+2026/08/30 17:19:07 Downloaded piece 319/1025 (31.12%)
+2026/08/30 17:19:08 Downloaded piece 320/1025 (31.22%)
+2026/08/30 17:19:09 Downloaded piece 321/1025 (31.32%)
+2026/08/30 17:19:10 Downloaded piece 322/1025 (31.41%)
+2026/08/30 17:19:11 Downloaded piece 323/1025 (31.51%)
+2026/08/30 17:19:12 Downloaded piece 324/1025 (31.61%)
+2026/08/30 17:19:13 Downloaded piece 325/1025 (31.71%)
+2026/08/30 17:19:14 Downloaded piece 326/1025 (31.80%)
+2026/08/30 17:19:15 Downloaded piece 327/1025 (31.90%)
+2026/08/30 17:19:16 Downloaded piece 328/1025 (32.00%)
+2026/08/30 17:19:17 Downloaded piece 329/1025 (32.10%)
+2026/08/30 17:19:18 Downloaded piece 330/1025 (32.20%)
+2026/08/30 17:19:19 Downloaded piece 331/1025 (32.29%)
+2026/08/30 17:19:20 Downloaded piece 332/1025 (32.39%)
+2026/08/30 17:19:21 Downloaded piece 333/1025 (32.49%)
+2026/08/30 17:19:22 Downloaded piece 334/1025 (32.59%)
+2026/08/30 17:19:24 Downloaded piece 335/1025 (32.68%)
+2026/08/30 17:19:24 Downloaded piece 336/1025 (32.78%)
+2026/08/30 17:19:25 Downloaded piece 337/1025 (32.88%)
+2026/08/30 17:19:26 Downloaded piece 338/1025 (32.98%)
+2026/08/30 17:19:27 Downloaded piece 339/1025 (33.07%)
+2026/08/30 17:19:28 Downloaded piece 340/1025 (33.17%)
+2026/08/30 17:19:29 Downloaded piece 341/1025 (33.27%)
+2026/08/30 17:19:30 Downloaded piece 342/1025 (33.37%)
+2026/08/30 17:19:31 Downloaded piece 343/1025 (33.46%)
+2026/08/30 17:19:32 Downloaded piece 344/1025 (33.56%)
+2026/08/30 17:19:33 Downloaded piece 345/1025 (33.66%)
+2026/08/30 17:19:34 Downloaded piece 346/1025 (33.76%)
+2026/08/30 17:19:35 Downloaded piece 347/1025 (33.85%)
+2026/08/30 17:19:36 Downloaded piece 348/1025 (33.95%)
+2026/08/30 17:19:37 Downloaded piece 349/1025 (34.05%)
+2026/08/30 17:19:38 Downloaded piece 350/1025 (34.15%)
+2026/08/30 17:19:39 Downloaded piece 351/1025 (34.24%)
+2026/08/30 17:19:40 Downloaded piece 352/1025 (34.34%)
+2026/08/30 17:19:41 Downloaded piece 353/1025 (34.44%)
+2026/08/30 17:19:42 Downloaded piece 354/1025 (34.54%)
+2026/08/30 17:19:43 Downloaded piece 355/1025 (34.63%)
+2026/08/30 17:19:44 Downloaded piece 356/1025 (34.73%)
+2026/08/30 17:19:45 Downloaded piece 357/1025 (34.83%)
+2026/08/30 17:19:46 Downloaded piece 358/1025 (34.93%)
+2026/08/30 17:19:47 Downloaded piece 359/1025 (35.02%)
+2026/08/30 17:19:48 Downloaded piece 360/1025 (35.12%)
+2026/08/30 17:19:49 Downloaded piece 361/1025 (35.22%)
+2026/08/30 17:19:50 Downloaded piece 362/1025 (35.32%)
+2026/08/30 17:19:51 Downloaded piece 363/1025 (35.41%)
+2026/08/30 17:19:52 Downloaded piece 364/1025 (35.51%)
+2026/08/30 17:19:53 Downloaded piece 365/1025 (35.61%)
+2026/08/30 17:19:54 Downloaded piece 366/1025 (35.71%)
+2026/08/30 17:19:55 Downloaded piece 367/1025 (35.80%)
+2026/08/30 17:19:56 Downloaded piece 368/1025 (35.90%)
+2026/08/30 17:19:57 Downloaded piece 369/1025 (36.00%)
+2026/08/30 17:19:58 Downloaded piece 370/1025 (36.10%)
+2026/08/30 17:19:59 Downloaded piece 371/1025 (36.20%)
+2026/08/30 17:20:00 Downloaded piece 372/1025 (36.29%)
+2026/08/30 17:20:01 Downloaded piece 373/1025 (36.39%)
+2026/08/30 17:20:03 Downloaded piece 374/1025 (36.49%)
+2026/08/30 17:20:04 Downloaded piece 375/1025 (36.59%)
+2026/08/30 17:20:05 Downloaded piece 376/1025 (36.68%)
+2026/08/30 17:20:06 Downloaded piece 377/1025 (36.78%)
+2026/08/30 17:20:07 Downloaded piece 378/1025 (36.88%)
+2026/08/30 17:20:07 Downloaded piece 379/1025 (36.98%)
+2026/08/30 17:20:09 Downloaded piece 380/1025 (37.07%)
+2026/08/30 17:20:10 Downloaded piece 381/1025 (37.17%)
+2026/08/30 17:20:11 Downloaded piece 382/1025 (37.27%)
+2026/08/30 17:20:12 Downloaded piece 383/1025 (37.37%)
+2026/08/30 17:20:12 Downloaded piece 384/1025 (37.46%)
+2026/08/30 17:20:13 Downloaded piece 385/1025 (37.56%)
+2026/08/30 17:20:14 Downloaded piece 386/1025 (37.66%)
+2026/08/30 17:20:15 Downloaded piece 387/1025 (37.76%)
+2026/08/30 17:20:16 Downloaded piece 388/1025 (37.85%)
+2026/08/30 17:20:17 Downloaded piece 389/1025 (37.95%)
+2026/08/30 17:20:18 Downloaded piece 390/1025 (38.05%)
+2026/08/30 17:20:19 Downloaded piece 391/1025 (38.15%)
+2026/08/30 17:20:20 Downloaded piece 392/1025 (38.24%)
+2026/08/30 17:20:21 Downloaded piece 393/1025 (38.34%)
+2026/08/30 17:20:22 Downloaded piece 394/1025 (38.44%)
+2026/08/30 17:20:23 Downloaded piece 395/1025 (38.54%)
+2026/08/30 17:20:24 Downloaded piece 396/1025 (38.63%)
+2026/08/30 17:20:25 Downloaded piece 397/1025 (38.73%)
+2026/08/30 17:20:26 Downloaded piece 398/1025 (38.83%)
+2026/08/30 17:20:27 Downloaded piece 399/1025 (38.93%)
+2026/08/30 17:20:28 Downloaded piece 400/1025 (39.02%)
+2026/08/30 17:20:29 Downloaded piece 401/1025 (39.12%)
+2026/08/30 17:20:30 Downloaded piece 402/1025 (39.22%)
+2026/08/30 17:20:31 Downloaded piece 403/1025 (39.32%)
+2026/08/30 17:20:32 Downloaded piece 404/1025 (39.41%)
+2026/08/30 17:20:33 Downloaded piece 405/1025 (39.51%)
+2026/08/30 17:20:34 Downloaded piece 406/1025 (39.61%)
+2026/08/30 17:20:35 Downloaded piece 407/1025 (39.71%)
+2026/08/30 17:20:36 Downloaded piece 408/1025 (39.80%)
+2026/08/30 17:20:37 Downloaded piece 409/1025 (39.90%)
+2026/08/30 17:20:38 Downloaded piece 410/1025 (40.00%)
+2026/08/30 17:20:39 Downloaded piece 411/1025 (40.10%)
+2026/08/30 17:20:40 Downloaded piece 412/1025 (40.20%)
+2026/08/30 17:20:41 Downloaded piece 413/1025 (40.29%)
+2026/08/30 17:20:42 Downloaded piece 414/1025 (40.39%)
+2026/08/30 17:21:20 Timeout waiting for trackers. Proceeding with found peers...
+2026/08/30 17:21:20 Found 1100 peers. Attempting to fetch metadata...
+2026/08/30 17:21:20 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:20 Requested 2 pieces
+2026/08/30 17:21:20 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:20 Requested 2 pieces
+2026/08/30 17:21:20 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:20 Requested 2 pieces
+2026/08/30 17:21:20 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:20 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Successfully fetched metadata from 161.51.219.69:18002
+2026/08/30 17:21:21 Parsed Metadata: Name=lanterns.2026.s01e01.1080p.web.h264-cakes[EZTVx.to].mkv, Length=2431169756, PieceLength=2373632
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Starting concurrent download of 1025 pieces...
+2026/08/30 17:21:21 Launching 1100 workers...
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Worker 68.80.250.142:17028 failed piece 5: EOF
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 3
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 3
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Worker 122.57.118.88:62614 failed piece 10: read tcp 192.168.1.251:50244->122.57.118.88:62614: read: connection reset by peer
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Worker 180.113.42.250:20081 failed piece 9: read tcp 192.168.1.251:49484->180.113.42.250:20081: read: connection reset by peer
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received extension handshake. Metadata size: 20624, ut_metadata ID: 3
+2026/08/30 17:21:21 Requested 2 pieces
+2026/08/30 17:21:21 Worker 67.166.22.192:49925 failed piece 12: EOF
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:21 Received piece 0 (size: 16384)
+2026/08/30 17:21:21 Received piece 1 (size: 4240)
+2026/08/30 17:21:21 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Worker 114.223.53.84:20081 failed piece 14: read tcp 192.168.1.251:49956->114.223.53.84:20081: read: connection reset by peer
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received extension handshake. Metadata size: 20624, ut_metadata ID: 2
+2026/08/30 17:21:22 Requested 2 pieces
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 0 (size: 16384)
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:22 Received piece 1 (size: 4240)
+2026/08/30 17:21:22 Metadata successfully downloaded and verified
+2026/08/30 17:21:23 Downloaded piece 1/1025 (0.10%)
+2026/08/30 17:21:23 Received piece 0 (size: 16384)
+2026/08/30 17:21:23 Received piece 1 (size: 4240)
+2026/08/30 17:21:23 Metadata successfully downloaded and verified
+2026/08/30 17:21:23 Received piece 0 (size: 16384)
+2026/08/30 17:21:23 Received piece 1 (size: 4240)
+2026/08/30 17:21:23 Metadata successfully downloaded and verified
+2026/08/30 17:21:24 Downloaded piece 2/1025 (0.20%)
+2026/08/30 17:21:24 Downloaded piece 3/1025 (0.29%)
+2026/08/30 17:21:24 Downloaded piece 4/1025 (0.39%)
+2026/08/30 17:21:26 Downloaded piece 5/1025 (0.49%)
+2026/08/30 17:21:26 Downloaded piece 6/1025 (0.59%)
+2026/08/30 17:21:26 Received piece 0 (size: 16384)
+2026/08/30 17:21:26 Received piece 1 (size: 4240)
+2026/08/30 17:21:26 Metadata successfully downloaded and verified
+2026/08/30 17:21:27 Downloaded piece 7/1025 (0.68%)
+2026/08/30 17:21:27 Worker 169.0.48.146:31755 failed piece 8: read tcp 192.168.1.251:49597->169.0.48.146:31755: read: connection reset by peer
+2026/08/30 17:21:28 Downloaded piece 8/1025 (0.78%)
+2026/08/30 17:21:28 Downloaded piece 9/1025 (0.88%)
+2026/08/30 17:21:29 Downloaded piece 10/1025 (0.98%)
+2026/08/30 17:21:30 Downloaded piece 11/1025 (1.07%)
+2026/08/30 17:21:30 Downloaded piece 12/1025 (1.17%)
+2026/08/30 17:21:30 Downloaded piece 13/1025 (1.27%)
+2026/08/30 17:21:31 Downloaded piece 14/1025 (1.37%)
+2026/08/30 17:21:31 Downloaded piece 15/1025 (1.46%)
+2026/08/30 17:21:31 Worker 213.159.61.61:60974 failed piece 4: EOF
+2026/08/30 17:21:32 Downloaded piece 16/1025 (1.56%)
+2026/08/30 17:21:33 Downloaded piece 17/1025 (1.66%)
+2026/08/30 17:21:33 Worker 161.51.219.69:18002 failed piece 25: EOF
+2026/08/30 17:21:33 Downloaded piece 18/1025 (1.76%)
+2026/08/30 17:21:34 Downloaded piece 19/1025 (1.85%)
+2026/08/30 17:21:34 Downloaded piece 20/1025 (1.95%)
+2026/08/30 17:21:36 Downloaded piece 21/1025 (2.05%)
+2026/08/30 17:21:36 Downloaded piece 22/1025 (2.15%)
+2026/08/30 17:21:36 Downloaded piece 23/1025 (2.24%)
+2026/08/30 17:21:37 Downloaded piece 24/1025 (2.34%)
+2026/08/30 17:21:37 Downloaded piece 25/1025 (2.44%)
+2026/08/30 17:21:38 Downloaded piece 26/1025 (2.54%)
+2026/08/30 17:21:38 Downloaded piece 27/1025 (2.63%)
+2026/08/30 17:21:39 Downloaded piece 28/1025 (2.73%)
+2026/08/30 17:21:39 Downloaded piece 29/1025 (2.83%)
+2026/08/30 17:21:40 Downloaded piece 30/1025 (2.93%)
+2026/08/30 17:21:41 Downloaded piece 31/1025 (3.02%)
+2026/08/30 17:21:41 Downloaded piece 32/1025 (3.12%)
+2026/08/30 17:21:42 Downloaded piece 33/1025 (3.22%)
+2026/08/30 17:21:43 Downloaded piece 34/1025 (3.32%)
+2026/08/30 17:21:43 Downloaded piece 35/1025 (3.41%)
+2026/08/30 17:21:43 Downloaded piece 36/1025 (3.51%)
+2026/08/30 17:21:44 Downloaded piece 37/1025 (3.61%)
+2026/08/30 17:21:45 Downloaded piece 38/1025 (3.71%)
+2026/08/30 17:21:45 Downloaded piece 39/1025 (3.80%)
+2026/08/30 17:21:46 Downloaded piece 40/1025 (3.90%)
+2026/08/30 17:21:47 Downloaded piece 41/1025 (4.00%)
+2026/08/30 17:21:47 Downloaded piece 42/1025 (4.10%)
+2026/08/30 17:21:48 Downloaded piece 43/1025 (4.20%)
+2026/08/30 17:21:48 Downloaded piece 44/1025 (4.29%)
+2026/08/30 17:21:49 Downloaded piece 45/1025 (4.39%)
+2026/08/30 17:21:49 Downloaded piece 46/1025 (4.49%)
+2026/08/30 17:21:50 Downloaded piece 47/1025 (4.59%)
+2026/08/30 17:21:51 Downloaded piece 48/1025 (4.68%)
+2026/08/30 17:21:51 Downloaded piece 49/1025 (4.78%)
+2026/08/30 17:21:52 Downloaded piece 50/1025 (4.88%)
+2026/08/30 17:21:52 Downloaded piece 51/1025 (4.98%)
+2026/08/30 17:21:53 Downloaded piece 52/1025 (5.07%)
+2026/08/30 17:21:54 Downloaded piece 53/1025 (5.17%)
+2026/08/30 17:21:54 Downloaded piece 54/1025 (5.27%)
+2026/08/30 17:21:55 Downloaded piece 55/1025 (5.37%)
+2026/08/30 17:21:56 Downloaded piece 56/1025 (5.46%)
+2026/08/30 17:21:56 Downloaded piece 57/1025 (5.56%)
+2026/08/30 17:21:57 Downloaded piece 58/1025 (5.66%)
+2026/08/30 17:21:58 Downloaded piece 59/1025 (5.76%)
+2026/08/30 17:21:58 Downloaded piece 60/1025 (5.85%)
+2026/08/30 17:21:58 Downloaded piece 61/1025 (5.95%)
+2026/08/30 17:22:00 Downloaded piece 62/1025 (6.05%)
+2026/08/30 17:22:00 Downloaded piece 63/1025 (6.15%)
+2026/08/30 17:22:00 Downloaded piece 64/1025 (6.24%)
+2026/08/30 17:22:01 Downloaded piece 65/1025 (6.34%)
+2026/08/30 17:22:01 Downloaded piece 66/1025 (6.44%)
+2026/08/30 17:22:02 Downloaded piece 67/1025 (6.54%)
+2026/08/30 17:22:03 Downloaded piece 68/1025 (6.63%)
+2026/08/30 17:22:03 Downloaded piece 69/1025 (6.73%)
+2026/08/30 17:22:03 Downloaded piece 70/1025 (6.83%)
+2026/08/30 17:22:05 Downloaded piece 71/1025 (6.93%)
+2026/08/30 17:22:05 Downloaded piece 72/1025 (7.02%)
+2026/08/30 17:22:05 Downloaded piece 73/1025 (7.12%)
+2026/08/30 17:22:06 Downloaded piece 74/1025 (7.22%)
+2026/08/30 17:22:07 Downloaded piece 75/1025 (7.32%)
+2026/08/30 17:22:07 Downloaded piece 76/1025 (7.41%)
+2026/08/30 17:22:08 Downloaded piece 77/1025 (7.51%)
+2026/08/30 17:22:09 Downloaded piece 78/1025 (7.61%)
+2026/08/30 17:22:09 Downloaded piece 79/1025 (7.71%)
+2026/08/30 17:22:09 Downloaded piece 80/1025 (7.80%)
+2026/08/30 17:22:10 Downloaded piece 81/1025 (7.90%)
+2026/08/30 17:22:11 Downloaded piece 82/1025 (8.00%)
+2026/08/30 17:22:11 Downloaded piece 83/1025 (8.10%)
+2026/08/30 17:22:12 Downloaded piece 84/1025 (8.20%)
+2026/08/30 17:22:13 Downloaded piece 85/1025 (8.29%)
+2026/08/30 17:22:13 Downloaded piece 86/1025 (8.39%)
+2026/08/30 17:22:14 Downloaded piece 87/1025 (8.49%)
+2026/08/30 17:22:14 Downloaded piece 88/1025 (8.59%)
+2026/08/30 17:22:15 Downloaded piece 89/1025 (8.68%)
+2026/08/30 17:22:16 Downloaded piece 90/1025 (8.78%)
+2026/08/30 17:22:16 Downloaded piece 91/1025 (8.88%)
+2026/08/30 17:22:17 Downloaded piece 92/1025 (8.98%)
+2026/08/30 17:22:17 Downloaded piece 93/1025 (9.07%)
+2026/08/30 17:22:18 Downloaded piece 94/1025 (9.17%)
+2026/08/30 17:22:18 Downloaded piece 95/1025 (9.27%)
+2026/08/30 17:22:19 Downloaded piece 96/1025 (9.37%)
+2026/08/30 17:22:20 Downloaded piece 97/1025 (9.46%)
+2026/08/30 17:22:20 Downloaded piece 98/1025 (9.56%)
+2026/08/30 17:22:20 Downloaded piece 99/1025 (9.66%)
+2026/08/30 17:22:21 Worker 185.107.44.111:48812 failed piece 3: read tcp 192.168.1.251:50060->185.107.44.111:48812: i/o timeout
+2026/08/30 17:22:21 Worker 159.196.186.242:32886 failed piece 11: read tcp 192.168.1.251:49306->159.196.186.242:32886: i/o timeout
+2026/08/30 17:22:22 Downloaded piece 100/1025 (9.76%)
+2026/08/30 17:22:22 Downloaded piece 101/1025 (9.85%)
+2026/08/30 17:22:22 Downloaded piece 102/1025 (9.95%)
+2026/08/30 17:22:23 Downloaded piece 103/1025 (10.05%)
+2026/08/30 17:22:24 Downloaded piece 104/1025 (10.15%)
+2026/08/30 17:22:24 Downloaded piece 105/1025 (10.24%)
+2026/08/30 17:22:25 Downloaded piece 106/1025 (10.34%)
+2026/08/30 17:22:25 Downloaded piece 107/1025 (10.44%)
+2026/08/30 17:22:26 Downloaded piece 108/1025 (10.54%)
+2026/08/30 17:22:27 Downloaded piece 109/1025 (10.63%)
+2026/08/30 17:22:27 Downloaded piece 110/1025 (10.73%)
+2026/08/30 17:22:28 Downloaded piece 111/1025 (10.83%)
+2026/08/30 17:22:28 Downloaded piece 112/1025 (10.93%)
+2026/08/30 17:22:29 Downloaded piece 113/1025 (11.02%)
+2026/08/30 17:22:30 Downloaded piece 114/1025 (11.12%)
+2026/08/30 17:22:30 Downloaded piece 115/1025 (11.22%)
+2026/08/30 17:22:31 Downloaded piece 116/1025 (11.32%)
+2026/08/30 17:22:31 Worker 83.190.115.243:15380 failed piece 29: read tcp 192.168.1.251:49344->83.190.115.243:15380: i/o timeout
+2026/08/30 17:22:31 Downloaded piece 117/1025 (11.41%)
+2026/08/30 17:22:32 Downloaded piece 118/1025 (11.51%)
+2026/08/30 17:22:33 Downloaded piece 119/1025 (11.61%)
+2026/08/30 17:22:33 Downloaded piece 120/1025 (11.71%)
+2026/08/30 17:22:34 Downloaded piece 121/1025 (11.80%)
+2026/08/30 17:22:34 Downloaded piece 122/1025 (11.90%)
+2026/08/30 17:22:35 Downloaded piece 123/1025 (12.00%)
+2026/08/30 17:22:35 Downloaded piece 124/1025 (12.10%)
+2026/08/30 17:22:36 Downloaded piece 125/1025 (12.20%)
+2026/08/30 17:22:37 Worker 101.100.138.59:50413 failed piece 38: read tcp 192.168.1.251:49422->101.100.138.59:50413: i/o timeout
+2026/08/30 17:22:37 Downloaded piece 126/1025 (12.29%)
+2026/08/30 17:22:37 Downloaded piece 127/1025 (12.39%)
+2026/08/30 17:22:38 Downloaded piece 128/1025 (12.49%)
+2026/08/30 17:22:39 Downloaded piece 129/1025 (12.59%)
+2026/08/30 17:22:39 Downloaded piece 130/1025 (12.68%)
+2026/08/30 17:22:40 Timeout waiting for trackers. Proceeding with found peers...
+2026/08/30 17:22:40 Found 511 peers. Attempting to fetch metadata...
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Downloaded piece 131/1025 (12.78%)
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Successfully fetched metadata from 62.68.164.248:4084
+2026/08/30 17:22:40 Parsed Metadata: Name=The New York Times Best Sellers - August 23, 2026, Length=0, PieceLength=262144
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 3
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Starting concurrent download of 552 pieces...
+2026/08/30 17:22:40 Launching 511 workers...
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 3
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Worker 176.63.155.93:60102 failed piece 8: EOF
+2026/08/30 17:22:40 Worker 176.63.155.93:60102 failed piece 9: EOF
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Worker 46.246.80.2:12805 failed piece 11: EOF
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Worker 24.222.191.183:44303 failed piece 12: EOF
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Downloaded piece 1/552 (0.18%)
+2026/08/30 17:22:40 Downloaded piece 2/552 (0.36%)
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Downloaded piece 3/552 (0.54%)
+2026/08/30 17:22:40 Worker 24.222.191.183:44303 failed piece 14: read tcp 192.168.1.251:51231->24.222.191.183:44303: read: connection reset by peer
+2026/08/30 17:22:40 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:40 Requested 1 pieces
+2026/08/30 17:22:40 Downloaded piece 4/552 (0.72%)
+2026/08/30 17:22:40 Received piece 0 (size: 13775)
+2026/08/30 17:22:40 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Downloaded piece 5/552 (0.91%)
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Downloaded piece 6/552 (1.09%)
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Worker 103.214.20.216:58338 failed piece 21: EOF
+2026/08/30 17:22:41 Worker 103.214.20.216:58338 failed piece 22: EOF
+2026/08/30 17:22:41 Worker 103.214.20.216:58338 failed piece 23: EOF
+2026/08/30 17:22:41 Downloaded piece 7/552 (1.27%)
+2026/08/30 17:22:41 Downloaded piece 8/552 (1.45%)
+2026/08/30 17:22:41 Downloaded piece 9/552 (1.63%)
+2026/08/30 17:22:41 Worker 24.222.191.183:44303 failed piece 13: EOF
+2026/08/30 17:22:41 Received extension handshake. Metadata size: 13775, ut_metadata ID: 3
+2026/08/30 17:22:41 Requested 1 pieces
+2026/08/30 17:22:41 Received extension handshake. Metadata size: 13775, ut_metadata ID: 3
+2026/08/30 17:22:41 Received extension handshake. Metadata size: 13775, ut_metadata ID: 3
+2026/08/30 17:22:41 Requested 1 pieces
+2026/08/30 17:22:41 Requested 1 pieces
+2026/08/30 17:22:41 Downloaded piece 132/1025 (12.88%)
+2026/08/30 17:22:41 Downloaded piece 133/1025 (12.98%)
+2026/08/30 17:22:41 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:41 Requested 1 pieces
+2026/08/30 17:22:41 Downloaded piece 10/552 (1.81%)
+2026/08/30 17:22:41 Downloaded piece 11/552 (1.99%)
+2026/08/30 17:22:41 Downloaded piece 12/552 (2.17%)
+2026/08/30 17:22:41 Downloaded piece 13/552 (2.36%)
+2026/08/30 17:22:41 Downloaded piece 14/552 (2.54%)
+2026/08/30 17:22:41 Downloaded piece 15/552 (2.72%)
+2026/08/30 17:22:41 Downloaded piece 16/552 (2.90%)
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Downloaded piece 17/552 (3.08%)
+2026/08/30 17:22:41 Downloaded piece 18/552 (3.26%)
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Received piece 0 (size: 13775)
+2026/08/30 17:22:41 Metadata successfully downloaded and verified
+2026/08/30 17:22:41 Downloaded piece 19/552 (3.44%)
+2026/08/30 17:22:42 Downloaded piece 20/552 (3.62%)
+2026/08/30 17:22:42 Downloaded piece 21/552 (3.80%)
+2026/08/30 17:22:42 Downloaded piece 22/552 (3.99%)
+2026/08/30 17:22:42 Downloaded piece 23/552 (4.17%)
+2026/08/30 17:22:42 Downloaded piece 134/1025 (13.07%)
+2026/08/30 17:22:42 Downloaded piece 24/552 (4.35%)
+2026/08/30 17:22:42 Downloaded piece 25/552 (4.53%)
+2026/08/30 17:22:42 Downloaded piece 26/552 (4.71%)
+2026/08/30 17:22:42 Downloaded piece 27/552 (4.89%)
+2026/08/30 17:22:42 Downloaded piece 28/552 (5.07%)
+2026/08/30 17:22:42 Downloaded piece 29/552 (5.25%)
+2026/08/30 17:22:42 Downloaded piece 30/552 (5.43%)
+2026/08/30 17:22:42 Downloaded piece 31/552 (5.62%)
+2026/08/30 17:22:42 Downloaded piece 32/552 (5.80%)
+2026/08/30 17:22:43 Downloaded piece 33/552 (5.98%)
+2026/08/30 17:22:43 Downloaded piece 135/1025 (13.17%)
+2026/08/30 17:22:43 Downloaded piece 34/552 (6.16%)
+2026/08/30 17:22:43 Downloaded piece 35/552 (6.34%)
+2026/08/30 17:22:43 Downloaded piece 36/552 (6.52%)
+2026/08/30 17:22:43 Received extension handshake. Metadata size: 13775, ut_metadata ID: 2
+2026/08/30 17:22:43 Requested 1 pieces
+2026/08/30 17:22:43 Downloaded piece 37/552 (6.70%)
+2026/08/30 17:22:43 Downloaded piece 38/552 (6.88%)
+2026/08/30 17:22:43 Downloaded piece 39/552 (7.07%)
+2026/08/30 17:22:43 Downloaded piece 136/1025 (13.27%)
+2026/08/30 17:22:43 Downloaded piece 40/552 (7.25%)
+2026/08/30 17:22:43 Downloaded piece 41/552 (7.43%)
+2026/08/30 17:22:43 Downloaded piece 42/552 (7.61%)
+2026/08/30 17:22:43 Downloaded piece 43/552 (7.79%)
+2026/08/30 17:22:43 Downloaded piece 44/552 (7.97%)
+2026/08/30 17:22:43 Downloaded piece 45/552 (8.15%)
+2026/08/30 17:22:44 Downloaded piece 46/552 (8.33%)
+2026/08/30 17:22:44 Downloaded piece 47/552 (8.51%)
+2026/08/30 17:22:44 Received piece 0 (size: 13775)
+2026/08/30 17:22:44 Metadata successfully downloaded and verified
+2026/08/30 17:22:44 Downloaded piece 137/1025 (13.37%)
+2026/08/30 17:22:44 Downloaded piece 48/552 (8.70%)
+2026/08/30 17:22:44 Downloaded piece 49/552 (8.88%)
+2026/08/30 17:22:44 Downloaded piece 50/552 (9.06%)
+2026/08/30 17:22:44 Downloaded piece 51/552 (9.24%)
+2026/08/30 17:22:44 Downloaded piece 52/552 (9.42%)
+2026/08/30 17:22:44 Downloaded piece 53/552 (9.60%)
+2026/08/30 17:22:44 Downloaded piece 54/552 (9.78%)
+2026/08/30 17:22:44 Downloaded piece 55/552 (9.96%)
+2026/08/30 17:22:44 Downloaded piece 56/552 (10.14%)
+2026/08/30 17:22:44 Downloaded piece 57/552 (10.33%)
+2026/08/30 17:22:44 Downloaded piece 58/552 (10.51%)
+2026/08/30 17:22:45 Downloaded piece 59/552 (10.69%)
+2026/08/30 17:22:45 Downloaded piece 60/552 (10.87%)
+2026/08/30 17:22:45 Downloaded piece 138/1025 (13.46%)
+2026/08/30 17:22:45 Downloaded piece 61/552 (11.05%)
+2026/08/30 17:22:45 Downloaded piece 62/552 (11.23%)
+2026/08/30 17:22:45 Downloaded piece 63/552 (11.41%)
+2026/08/30 17:22:45 Downloaded piece 64/552 (11.59%)
+2026/08/30 17:22:45 Downloaded piece 65/552 (11.78%)
+2026/08/30 17:22:45 Downloaded piece 139/1025 (13.56%)
+2026/08/30 17:22:45 Downloaded piece 66/552 (11.96%)
+2026/08/30 17:22:45 Downloaded piece 67/552 (12.14%)
+2026/08/30 17:22:45 Downloaded piece 68/552 (12.32%)
+2026/08/30 17:22:45 Downloaded piece 69/552 (12.50%)
+2026/08/30 17:22:45 Downloaded piece 70/552 (12.68%)
+2026/08/30 17:22:46 Downloaded piece 71/552 (12.86%)
+2026/08/30 17:22:46 Downloaded piece 72/552 (13.04%)
+2026/08/30 17:22:46 Downloaded piece 73/552 (13.22%)
+2026/08/30 17:22:46 Downloaded piece 140/1025 (13.66%)
+2026/08/30 17:22:46 Downloaded piece 74/552 (13.41%)
+2026/08/30 17:22:46 Downloaded piece 75/552 (13.59%)
+2026/08/30 17:22:46 Downloaded piece 76/552 (13.77%)
+2026/08/30 17:22:46 Downloaded piece 77/552 (13.95%)
+2026/08/30 17:22:46 Downloaded piece 78/552 (14.13%)
+2026/08/30 17:22:46 Downloaded piece 79/552 (14.31%)
+2026/08/30 17:22:46 Downloaded piece 80/552 (14.49%)
+2026/08/30 17:22:46 Downloaded piece 81/552 (14.67%)
+2026/08/30 17:22:46 Downloaded piece 141/1025 (13.76%)
+2026/08/30 17:22:46 Downloaded piece 82/552 (14.86%)
+2026/08/30 17:22:46 Downloaded piece 83/552 (15.04%)
+2026/08/30 17:22:46 Downloaded piece 84/552 (15.22%)
+2026/08/30 17:22:47 Piece 103 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:22:47 Downloaded piece 85/552 (15.40%)
+2026/08/30 17:22:47 Downloaded piece 86/552 (15.58%)
+2026/08/30 17:22:47 Downloaded piece 87/552 (15.76%)
+2026/08/30 17:22:47 Downloaded piece 88/552 (15.94%)
+2026/08/30 17:22:47 Downloaded piece 89/552 (16.12%)
+2026/08/30 17:22:47 Downloaded piece 90/552 (16.30%)
+2026/08/30 17:22:47 Downloaded piece 142/1025 (13.85%)
+2026/08/30 17:22:47 Downloaded piece 91/552 (16.49%)
+2026/08/30 17:22:47 Downloaded piece 92/552 (16.67%)
+2026/08/30 17:22:47 Downloaded piece 93/552 (16.85%)
+2026/08/30 17:22:47 Downloaded piece 94/552 (17.03%)
+2026/08/30 17:22:47 Downloaded piece 95/552 (17.21%)
+2026/08/30 17:22:47 Downloaded piece 96/552 (17.39%)
+2026/08/30 17:22:48 Downloaded piece 143/1025 (13.95%)
+2026/08/30 17:22:48 Downloaded piece 97/552 (17.57%)
+2026/08/30 17:22:48 Downloaded piece 98/552 (17.75%)
+2026/08/30 17:22:48 Downloaded piece 99/552 (17.93%)
+2026/08/30 17:22:48 Downloaded piece 100/552 (18.12%)
+2026/08/30 17:22:48 Downloaded piece 101/552 (18.30%)
+2026/08/30 17:22:48 Downloaded piece 102/552 (18.48%)
+2026/08/30 17:22:48 Downloaded piece 103/552 (18.66%)
+2026/08/30 17:22:48 Downloaded piece 144/1025 (14.05%)
+2026/08/30 17:22:48 Downloaded piece 104/552 (18.84%)
+2026/08/30 17:22:48 Downloaded piece 105/552 (19.02%)
+2026/08/30 17:22:48 Downloaded piece 106/552 (19.20%)
+2026/08/30 17:22:48 Downloaded piece 107/552 (19.38%)
+2026/08/30 17:22:48 Downloaded piece 108/552 (19.57%)
+2026/08/30 17:22:48 Downloaded piece 109/552 (19.75%)
+2026/08/30 17:22:48 Piece 129 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:22:48 Downloaded piece 110/552 (19.93%)
+2026/08/30 17:22:49 Downloaded piece 111/552 (20.11%)
+2026/08/30 17:22:49 Downloaded piece 112/552 (20.29%)
+2026/08/30 17:22:49 Downloaded piece 113/552 (20.47%)
+2026/08/30 17:22:49 Downloaded piece 114/552 (20.65%)
+2026/08/30 17:22:49 Downloaded piece 115/552 (20.83%)
+2026/08/30 17:22:49 Downloaded piece 116/552 (21.01%)
+2026/08/30 17:22:49 Downloaded piece 117/552 (21.20%)
+2026/08/30 17:22:49 Downloaded piece 145/1025 (14.15%)
+2026/08/30 17:22:49 Downloaded piece 118/552 (21.38%)
+2026/08/30 17:22:49 Downloaded piece 119/552 (21.56%)
+2026/08/30 17:22:49 Downloaded piece 120/552 (21.74%)
+2026/08/30 17:22:49 Downloaded piece 121/552 (21.92%)
+2026/08/30 17:22:49 Downloaded piece 146/1025 (14.24%)
+2026/08/30 17:22:49 Downloaded piece 122/552 (22.10%)
+2026/08/30 17:22:50 Downloaded piece 123/552 (22.28%)
+2026/08/30 17:22:50 Downloaded piece 124/552 (22.46%)
+2026/08/30 17:22:50 Downloaded piece 125/552 (22.64%)
+2026/08/30 17:22:50 Downloaded piece 147/1025 (14.34%)
+2026/08/30 17:22:50 Downloaded piece 126/552 (22.83%)
+2026/08/30 17:22:50 Downloaded piece 127/552 (23.01%)
+2026/08/30 17:22:50 Downloaded piece 128/552 (23.19%)
+2026/08/30 17:22:50 Downloaded piece 129/552 (23.37%)
+2026/08/30 17:22:50 Downloaded piece 130/552 (23.55%)
+2026/08/30 17:22:50 Downloaded piece 131/552 (23.73%)
+2026/08/30 17:22:50 Downloaded piece 132/552 (23.91%)
+2026/08/30 17:22:50 Downloaded piece 133/552 (24.09%)
+2026/08/30 17:22:50 Downloaded piece 134/552 (24.28%)
+2026/08/30 17:22:50 Downloaded piece 135/552 (24.46%)
+2026/08/30 17:22:50 Downloaded piece 136/552 (24.64%)
+2026/08/30 17:22:51 Downloaded piece 137/552 (24.82%)
+2026/08/30 17:22:51 Downloaded piece 138/552 (25.00%)
+2026/08/30 17:22:51 Downloaded piece 139/552 (25.18%)
+2026/08/30 17:22:51 Downloaded piece 140/552 (25.36%)
+2026/08/30 17:22:51 Downloaded piece 141/552 (25.54%)
+2026/08/30 17:22:51 Downloaded piece 142/552 (25.72%)
+2026/08/30 17:22:51 Downloaded piece 143/552 (25.91%)
+2026/08/30 17:22:51 Downloaded piece 144/552 (26.09%)
+2026/08/30 17:22:51 Downloaded piece 148/1025 (14.44%)
+2026/08/30 17:22:51 Downloaded piece 145/552 (26.27%)
+2026/08/30 17:22:51 Downloaded piece 146/552 (26.45%)
+2026/08/30 17:22:51 Downloaded piece 147/552 (26.63%)
+2026/08/30 17:22:51 Downloaded piece 149/1025 (14.54%)
+2026/08/30 17:22:51 Downloaded piece 148/552 (26.81%)
+2026/08/30 17:22:52 Downloaded piece 149/552 (26.99%)
+2026/08/30 17:22:52 Downloaded piece 150/552 (27.17%)
+2026/08/30 17:22:52 Downloaded piece 150/1025 (14.63%)
+2026/08/30 17:22:52 Downloaded piece 151/552 (27.36%)
+2026/08/30 17:22:52 Downloaded piece 152/552 (27.54%)
+2026/08/30 17:22:52 Downloaded piece 153/552 (27.72%)
+2026/08/30 17:22:52 Downloaded piece 154/552 (27.90%)
+2026/08/30 17:22:52 Piece 175 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:22:52 Downloaded piece 155/552 (28.08%)
+2026/08/30 17:22:52 Downloaded piece 156/552 (28.26%)
+2026/08/30 17:22:52 Piece 178 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:22:52 Downloaded piece 157/552 (28.44%)
+2026/08/30 17:22:52 Downloaded piece 158/552 (28.62%)
+2026/08/30 17:22:52 Downloaded piece 159/552 (28.80%)
+2026/08/30 17:22:52 Downloaded piece 160/552 (28.99%)
+2026/08/30 17:22:53 Downloaded piece 161/552 (29.17%)
+2026/08/30 17:22:53 Downloaded piece 162/552 (29.35%)
+2026/08/30 17:22:53 Downloaded piece 163/552 (29.53%)
+2026/08/30 17:22:53 Downloaded piece 164/552 (29.71%)
+2026/08/30 17:22:53 Downloaded piece 165/552 (29.89%)
+2026/08/30 17:22:53 Downloaded piece 166/552 (30.07%)
+2026/08/30 17:22:53 Downloaded piece 167/552 (30.25%)
+2026/08/30 17:22:53 Downloaded piece 168/552 (30.43%)
+2026/08/30 17:22:53 Downloaded piece 169/552 (30.62%)
+2026/08/30 17:22:53 Downloaded piece 170/552 (30.80%)
+2026/08/30 17:22:53 Downloaded piece 151/1025 (14.73%)
+2026/08/30 17:22:53 Downloaded piece 152/1025 (14.83%)
+2026/08/30 17:22:53 Downloaded piece 153/1025 (14.93%)
+2026/08/30 17:22:53 Downloaded piece 171/552 (30.98%)
+2026/08/30 17:22:53 Downloaded piece 172/552 (31.16%)
+2026/08/30 17:22:53 Downloaded piece 173/552 (31.34%)
+2026/08/30 17:22:54 Downloaded piece 174/552 (31.52%)
+2026/08/30 17:22:54 Downloaded piece 175/552 (31.70%)
+2026/08/30 17:22:54 Downloaded piece 176/552 (31.88%)
+2026/08/30 17:22:54 Downloaded piece 177/552 (32.07%)
+2026/08/30 17:22:54 Downloaded piece 178/552 (32.25%)
+2026/08/30 17:22:54 Downloaded piece 179/552 (32.43%)
+2026/08/30 17:22:54 Downloaded piece 180/552 (32.61%)
+2026/08/30 17:22:54 Downloaded piece 181/552 (32.79%)
+2026/08/30 17:22:54 Downloaded piece 182/552 (32.97%)
+2026/08/30 17:22:54 Downloaded piece 183/552 (33.15%)
+2026/08/30 17:22:54 Downloaded piece 184/552 (33.33%)
+2026/08/30 17:22:54 Downloaded piece 185/552 (33.51%)
+2026/08/30 17:22:55 Downloaded piece 186/552 (33.70%)
+2026/08/30 17:22:55 Downloaded piece 187/552 (33.88%)
+2026/08/30 17:22:55 Downloaded piece 188/552 (34.06%)
+2026/08/30 17:22:55 Downloaded piece 189/552 (34.24%)
+2026/08/30 17:22:55 Downloaded piece 190/552 (34.42%)
+2026/08/30 17:22:55 Downloaded piece 191/552 (34.60%)
+2026/08/30 17:22:55 Downloaded piece 192/552 (34.78%)
+2026/08/30 17:22:55 Downloaded piece 193/552 (34.96%)
+2026/08/30 17:22:55 Downloaded piece 154/1025 (15.02%)
+2026/08/30 17:22:55 Downloaded piece 155/1025 (15.12%)
+2026/08/30 17:22:55 Downloaded piece 194/552 (35.14%)
+2026/08/30 17:22:55 Downloaded piece 195/552 (35.33%)
+2026/08/30 17:22:55 Downloaded piece 196/552 (35.51%)
+2026/08/30 17:22:55 Downloaded piece 156/1025 (15.22%)
+2026/08/30 17:22:55 Downloaded piece 197/552 (35.69%)
+2026/08/30 17:22:55 Downloaded piece 198/552 (35.87%)
+2026/08/30 17:22:55 Downloaded piece 199/552 (36.05%)
+2026/08/30 17:22:56 Downloaded piece 200/552 (36.23%)
+2026/08/30 17:22:56 Downloaded piece 201/552 (36.41%)
+2026/08/30 17:22:56 Downloaded piece 202/552 (36.59%)
+2026/08/30 17:22:56 Downloaded piece 203/552 (36.78%)
+2026/08/30 17:22:56 Downloaded piece 204/552 (36.96%)
+2026/08/30 17:22:56 Downloaded piece 205/552 (37.14%)
+2026/08/30 17:22:56 Downloaded piece 206/552 (37.32%)
+2026/08/30 17:22:56 Downloaded piece 207/552 (37.50%)
+2026/08/30 17:22:56 Downloaded piece 208/552 (37.68%)
+2026/08/30 17:22:56 Downloaded piece 209/552 (37.86%)
+2026/08/30 17:22:56 Piece 232 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:22:57 Downloaded piece 210/552 (38.04%)
+2026/08/30 17:22:57 Piece 235 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:22:57 Downloaded piece 211/552 (38.22%)
+2026/08/30 17:22:57 Downloaded piece 212/552 (38.41%)
+2026/08/30 17:22:57 Downloaded piece 213/552 (38.59%)
+2026/08/30 17:22:57 Downloaded piece 214/552 (38.77%)
+2026/08/30 17:22:57 Downloaded piece 215/552 (38.95%)
+2026/08/30 17:22:57 Downloaded piece 157/1025 (15.32%)
+2026/08/30 17:22:57 Downloaded piece 216/552 (39.13%)
+2026/08/30 17:22:57 Downloaded piece 217/552 (39.31%)
+2026/08/30 17:22:57 Downloaded piece 218/552 (39.49%)
+2026/08/30 17:22:57 Downloaded piece 158/1025 (15.41%)
+2026/08/30 17:22:57 Downloaded piece 219/552 (39.67%)
+2026/08/30 17:22:57 Downloaded piece 220/552 (39.86%)
+2026/08/30 17:22:57 Downloaded piece 159/1025 (15.51%)
+2026/08/30 17:22:57 Downloaded piece 221/552 (40.04%)
+2026/08/30 17:22:58 Downloaded piece 222/552 (40.22%)
+2026/08/30 17:22:58 Downloaded piece 223/552 (40.40%)
+2026/08/30 17:22:58 Downloaded piece 224/552 (40.58%)
+2026/08/30 17:22:58 Downloaded piece 225/552 (40.76%)
+2026/08/30 17:22:58 Downloaded piece 226/552 (40.94%)
+2026/08/30 17:22:58 Downloaded piece 227/552 (41.12%)
+2026/08/30 17:22:58 Downloaded piece 228/552 (41.30%)
+2026/08/30 17:22:58 Downloaded piece 229/552 (41.49%)
+2026/08/30 17:22:58 Downloaded piece 230/552 (41.67%)
+2026/08/30 17:22:58 Downloaded piece 231/552 (41.85%)
+2026/08/30 17:22:58 Downloaded piece 232/552 (42.03%)
+2026/08/30 17:22:58 Downloaded piece 233/552 (42.21%)
+2026/08/30 17:22:58 Downloaded piece 234/552 (42.39%)
+2026/08/30 17:22:59 Downloaded piece 235/552 (42.57%)
+2026/08/30 17:22:59 Downloaded piece 236/552 (42.75%)
+2026/08/30 17:22:59 Downloaded piece 160/1025 (15.61%)
+2026/08/30 17:22:59 Downloaded piece 237/552 (42.93%)
+2026/08/30 17:22:59 Downloaded piece 238/552 (43.12%)
+2026/08/30 17:22:59 Downloaded piece 239/552 (43.30%)
+2026/08/30 17:22:59 Downloaded piece 240/552 (43.48%)
+2026/08/30 17:22:59 Downloaded piece 241/552 (43.66%)
+2026/08/30 17:22:59 Downloaded piece 161/1025 (15.71%)
+2026/08/30 17:22:59 Downloaded piece 242/552 (43.84%)
+2026/08/30 17:22:59 Downloaded piece 243/552 (44.02%)
+2026/08/30 17:22:59 Downloaded piece 244/552 (44.20%)
+2026/08/30 17:22:59 Downloaded piece 245/552 (44.38%)
+2026/08/30 17:22:59 Downloaded piece 246/552 (44.57%)
+2026/08/30 17:22:59 Downloaded piece 247/552 (44.75%)
+2026/08/30 17:22:59 Downloaded piece 162/1025 (15.80%)
+2026/08/30 17:23:00 Downloaded piece 248/552 (44.93%)
+2026/08/30 17:23:00 Downloaded piece 249/552 (45.11%)
+2026/08/30 17:23:00 Downloaded piece 250/552 (45.29%)
+2026/08/30 17:23:00 Downloaded piece 251/552 (45.47%)
+2026/08/30 17:23:00 Downloaded piece 252/552 (45.65%)
+2026/08/30 17:23:00 Downloaded piece 253/552 (45.83%)
+2026/08/30 17:23:00 Downloaded piece 254/552 (46.01%)
+2026/08/30 17:23:00 Downloaded piece 255/552 (46.20%)
+2026/08/30 17:23:00 Downloaded piece 256/552 (46.38%)
+2026/08/30 17:23:00 Downloaded piece 257/552 (46.56%)
+2026/08/30 17:23:00 Downloaded piece 258/552 (46.74%)
+2026/08/30 17:23:00 Downloaded piece 259/552 (46.92%)
+2026/08/30 17:23:00 Downloaded piece 163/1025 (15.90%)
+2026/08/30 17:23:01 Downloaded piece 260/552 (47.10%)
+2026/08/30 17:23:01 Downloaded piece 261/552 (47.28%)
+2026/08/30 17:23:01 Downloaded piece 262/552 (47.46%)
+2026/08/30 17:23:01 Downloaded piece 263/552 (47.64%)
+2026/08/30 17:23:01 Downloaded piece 264/552 (47.83%)
+2026/08/30 17:23:01 Downloaded piece 265/552 (48.01%)
+2026/08/30 17:23:01 Downloaded piece 164/1025 (16.00%)
+2026/08/30 17:23:01 Downloaded piece 266/552 (48.19%)
+2026/08/30 17:23:01 Downloaded piece 267/552 (48.37%)
+2026/08/30 17:23:01 Downloaded piece 268/552 (48.55%)
+2026/08/30 17:23:01 Downloaded piece 269/552 (48.73%)
+2026/08/30 17:23:01 Downloaded piece 270/552 (48.91%)
+2026/08/30 17:23:01 Downloaded piece 271/552 (49.09%)
+2026/08/30 17:23:01 Downloaded piece 272/552 (49.28%)
+2026/08/30 17:23:01 Downloaded piece 273/552 (49.46%)
+2026/08/30 17:23:01 Downloaded piece 165/1025 (16.10%)
+2026/08/30 17:23:02 Downloaded piece 274/552 (49.64%)
+2026/08/30 17:23:02 Downloaded piece 275/552 (49.82%)
+2026/08/30 17:23:02 Downloaded piece 276/552 (50.00%)
+2026/08/30 17:23:02 Downloaded piece 277/552 (50.18%)
+2026/08/30 17:23:02 Downloaded piece 278/552 (50.36%)
+2026/08/30 17:23:02 Downloaded piece 279/552 (50.54%)
+2026/08/30 17:23:02 Piece 304 failed hash check: piece hash mismatch. Requeueing...
+2026/08/30 17:23:02 Downloaded piece 280/552 (50.72%)
+2026/08/30 17:23:02 Downloaded piece 281/552 (50.91%)
+2026/08/30 17:23:02 Downloaded piece 166/1025 (16.20%)
+2026/08/30 17:23:02 Downloaded piece 282/552 (51.09%)
+2026/08/30 17:23:02 Downloaded piece 283/552 (51.27%)
+2026/08/30 17:23:02 Downloaded piece 284/552 (51.45%)
+2026/08/30 17:23:02 Downloaded piece 285/552 (51.63%)
+2026/08/30 17:23:02 Downloaded piece 286/552 (51.81%)
+2026/08/30 17:23:03 Downloaded piece 287/552 (51.99%)
+2026/08/30 17:23:03 Downloaded piece 288/552 (52.17%)
+2026/08/30 17:23:03 Downloaded piece 167/1025 (16.29%)
+2026/08/30 17:23:03 Downloaded piece 289/552 (52.36%)
+2026/08/30 17:23:03 Downloaded piece 290/552 (52.54%)
+2026/08/30 17:23:03 Downloaded piece 291/552 (52.72%)
+2026/08/30 17:23:03 Worker 72.21.17.73:25796 failed piece 125: EOF
+2026/08/30 17:23:03 Downloaded piece 292/552 (52.90%)
+2026/08/30 17:23:03 Downloaded piece 293/552 (53.08%)
+2026/08/30 17:23:03 Downloaded piece 294/552 (53.26%)
+2026/08/30 17:23:03 Downloaded piece 295/552 (53.44%)
+2026/08/30 17:23:03 Downloaded piece 296/552 (53.62%)
+2026/08/30 17:23:03 Downloaded piece 297/552 (53.80%)
+2026/08/30 17:23:03 Downloaded piece 168/1025 (16.39%)
+2026/08/30 17:23:03 Downloaded piece 298/552 (53.99%)
+2026/08/30 17:23:03 Downloaded piece 299/552 (54.17%)
+2026/08/30 17:23:04 Downloaded piece 300/552 (54.35%)
+2026/08/30 17:23:04 Downloaded piece 301/552 (54.53%)
+2026/08/30 17:23:04 Downloaded piece 302/552 (54.71%)
+2026/08/30 17:23:04 Downloaded piece 303/552 (54.89%)
+2026/08/30 17:23:04 Downloaded piece 304/552 (55.07%)
+2026/08/30 17:23:04 Downloaded piece 305/552 (55.25%)
+2026/08/30 17:23:04 Downloaded piece 169/1025 (16.49%)
+2026/08/30 17:23:04 Downloaded piece 306/552 (55.43%)
+2026/08/30 17:23:04 Downloaded piece 307/552 (55.62%)
+2026/08/30 17:23:04 Downloaded piece 308/552 (55.80%)
+2026/08/30 17:23:04 Torrent failed: download cancelled
+2026/08/30 17:23:04 Downloaded piece 170/1025 (16.59%)
+2026/08/30 17:23:05 Downloaded piece 171/1025 (16.68%)
+2026/08/30 17:23:06 Downloaded piece 172/1025 (16.78%)
+2026/08/30 17:23:06 Downloaded piece 173/1025 (16.88%)
+2026/08/30 17:23:07 Downloaded piece 174/1025 (16.98%)
+2026/08/30 17:23:08 Downloaded piece 175/1025 (17.07%)
+2026/08/30 17:23:08 Downloaded piece 176/1025 (17.17%)
+2026/08/30 17:23:09 Downloaded piece 177/1025 (17.27%)
+2026/08/30 17:23:09 Downloaded piece 178/1025 (17.37%)
+2026/08/30 17:23:10 Downloaded piece 179/1025 (17.46%)
+2026/08/30 17:23:11 Downloaded piece 180/1025 (17.56%)
+2026/08/30 17:23:11 Downloaded piece 181/1025 (17.66%)
+2026/08/30 17:23:12 Downloaded piece 182/1025 (17.76%)
+2026/08/30 17:23:13 Downloaded piece 183/1025 (17.85%)
+2026/08/30 17:23:13 Downloaded piece 184/1025 (17.95%)
+2026/08/30 17:23:14 Downloaded piece 185/1025 (18.05%)
+2026/08/30 17:23:14 Downloaded piece 186/1025 (18.15%)
+2026/08/30 17:23:15 Downloaded piece 187/1025 (18.24%)
+2026/08/30 17:23:15 Downloaded piece 188/1025 (18.34%)
+2026/08/30 17:23:16 Downloaded piece 189/1025 (18.44%)
+2026/08/30 17:23:17 Downloaded piece 190/1025 (18.54%)
+2026/08/30 17:23:17 Downloaded piece 191/1025 (18.63%)
+2026/08/30 17:23:18 Downloaded piece 192/1025 (18.73%)
+2026/08/30 17:23:19 Downloaded piece 193/1025 (18.83%)
+2026/08/30 17:23:19 Downloaded piece 194/1025 (18.93%)
+2026/08/30 17:23:20 Downloaded piece 195/1025 (19.02%)
+2026/08/30 17:23:21 Downloaded piece 196/1025 (19.12%)
+2026/08/30 17:23:21 Downloaded piece 197/1025 (19.22%)
+2026/08/30 17:23:22 Downloaded piece 198/1025 (19.32%)
+2026/08/30 17:23:23 Downloaded piece 199/1025 (19.41%)
+2026/08/30 17:23:23 Downloaded piece 200/1025 (19.51%)
+2026/08/30 17:23:24 Downloaded piece 201/1025 (19.61%)
+2026/08/30 17:23:25 Downloaded piece 202/1025 (19.71%)
+2026/08/30 17:23:25 Downloaded piece 203/1025 (19.80%)
+2026/08/30 17:23:26 Downloaded piece 204/1025 (19.90%)
+2026/08/30 17:23:27 Downloaded piece 205/1025 (20.00%)
+2026/08/30 17:23:27 Downloaded piece 206/1025 (20.10%)
+2026/08/30 17:23:29 Downloaded piece 207/1025 (20.20%)
+2026/08/30 17:23:29 Downloaded piece 208/1025 (20.29%)
+2026/08/30 17:23:30 Downloaded piece 209/1025 (20.39%)
+2026/08/30 17:23:31 Downloaded piece 210/1025 (20.49%)
+2026/08/30 17:23:31 Downloaded piece 211/1025 (20.59%)
+2026/08/30 17:23:33 Downloaded piece 212/1025 (20.68%)
+2026/08/30 17:23:33 Downloaded piece 213/1025 (20.78%)
+2026/08/30 17:23:33 Downloaded piece 214/1025 (20.88%)
+2026/08/30 17:23:34 Downloaded piece 215/1025 (20.98%)
+2026/08/30 17:23:35 Downloaded piece 216/1025 (21.07%)
+2026/08/30 17:23:36 Downloaded piece 217/1025 (21.17%)
+2026/08/30 17:23:36 Downloaded piece 218/1025 (21.27%)
+2026/08/30 17:23:37 Downloaded piece 219/1025 (21.37%)
+2026/08/30 17:23:37 Downloaded piece 220/1025 (21.46%)
+2026/08/30 17:23:39 Downloaded piece 221/1025 (21.56%)
+2026/08/30 17:23:39 Downloaded piece 222/1025 (21.66%)
+2026/08/30 17:23:40 Downloaded piece 223/1025 (21.76%)
+2026/08/30 17:23:40 Worker 62.68.164.248:4084 failed piece 1: read tcp 192.168.1.251:50815->62.68.164.248:4084: i/o timeout
+2026/08/30 17:23:40 Worker 178.79.70.64:4383 failed piece 3: read tcp 192.168.1.251:50882->178.79.70.64:4383: i/o timeout
+2026/08/30 17:23:40 Worker 92.234.90.47:62716 failed piece 5: read tcp 192.168.1.251:51018->92.234.90.47:62716: i/o timeout
+2026/08/30 17:23:40 Downloaded piece 224/1025 (21.85%)
+2026/08/30 17:23:40 Worker 195.85.197.233:5670 failed piece 17: read tcp 192.168.1.251:50833->195.85.197.233:5670: i/o timeout
+2026/08/30 17:23:41 Downloaded piece 225/1025 (21.95%)
+2026/08/30 17:23:41 Worker 46.246.80.2:12805 failed piece 35: read tcp 192.168.1.251:50819->46.246.80.2:12805: i/o timeout
+2026/08/30 17:23:41 Worker 176.63.155.93:60102 failed piece 40: read tcp 192.168.1.251:50876->176.63.155.93:60102: i/o timeout
+2026/08/30 17:23:42 Downloaded piece 226/1025 (22.05%)
+2026/08/30 17:23:43 Downloaded piece 227/1025 (22.15%)
+2026/08/30 17:23:43 Downloaded piece 228/1025 (22.24%)
+2026/08/30 17:23:43 Downloaded piece 229/1025 (22.34%)
+2026/08/30 17:23:45 Downloaded piece 230/1025 (22.44%)
+2026/08/30 17:23:45 Downloaded piece 231/1025 (22.54%)
+2026/08/30 17:23:47 Downloaded piece 232/1025 (22.63%)
+2026/08/30 17:23:47 Downloaded piece 233/1025 (22.73%)
+2026/08/30 17:23:47 Downloaded piece 234/1025 (22.83%)
+2026/08/30 17:23:48 Downloaded piece 235/1025 (22.93%)
+2026/08/30 17:23:49 Downloaded piece 236/1025 (23.02%)
+2026/08/30 17:23:50 Downloaded piece 237/1025 (23.12%)
+2026/08/30 17:23:51 Downloaded piece 238/1025 (23.22%)
+2026/08/30 17:23:51 Downloaded piece 239/1025 (23.32%)
+2026/08/30 17:23:51 Downloaded piece 240/1025 (23.41%)
+2026/08/30 17:23:53 Downloaded piece 241/1025 (23.51%)
+2026/08/30 17:23:53 Downloaded piece 242/1025 (23.61%)
+2026/08/30 17:23:53 Downloaded piece 243/1025 (23.71%)
+2026/08/30 17:23:55 Downloaded piece 244/1025 (23.80%)
+2026/08/30 17:23:55 Downloaded piece 245/1025 (23.90%)
+2026/08/30 17:23:55 Downloaded piece 246/1025 (24.00%)
+2026/08/30 17:23:56 Downloaded piece 247/1025 (24.10%)
+2026/08/30 17:23:56 Downloaded piece 248/1025 (24.20%)
+2026/08/30 17:23:57 Downloaded piece 249/1025 (24.29%)
+2026/08/30 17:23:58 Downloaded piece 250/1025 (24.39%)
+2026/08/30 17:23:58 Downloaded piece 251/1025 (24.49%)
+2026/08/30 17:23:59 Downloaded piece 252/1025 (24.59%)
+2026/08/30 17:23:59 Downloaded piece 253/1025 (24.68%)
+2026/08/30 17:24:00 Downloaded piece 254/1025 (24.78%)
+2026/08/30 17:24:01 Downloaded piece 255/1025 (24.88%)
+2026/08/30 17:24:01 Downloaded piece 256/1025 (24.98%)
+2026/08/30 17:24:02 Downloaded piece 257/1025 (25.07%)
+2026/08/30 17:24:02 Downloaded piece 258/1025 (25.17%)
+2026/08/30 17:24:03 Downloaded piece 259/1025 (25.27%)
+2026/08/30 17:24:04 Downloaded piece 260/1025 (25.37%)
+2026/08/30 17:24:04 Downloaded piece 261/1025 (25.46%)
+2026/08/30 17:24:05 Downloaded piece 262/1025 (25.56%)
+2026/08/30 17:24:05 Downloaded piece 263/1025 (25.66%)
+2026/08/30 17:24:06 Downloaded piece 264/1025 (25.76%)
+2026/08/30 17:24:07 Downloaded piece 265/1025 (25.85%)
+2026/08/30 17:24:07 Downloaded piece 266/1025 (25.95%)
+2026/08/30 17:24:08 Downloaded piece 267/1025 (26.05%)
+2026/08/30 17:24:09 Downloaded piece 268/1025 (26.15%)
+2026/08/30 17:24:09 Downloaded piece 269/1025 (26.24%)
+2026/08/30 17:24:10 Downloaded piece 270/1025 (26.34%)
+2026/08/30 17:24:10 Downloaded piece 271/1025 (26.44%)
+2026/08/30 17:24:11 Downloaded piece 272/1025 (26.54%)
+2026/08/30 17:24:11 Downloaded piece 273/1025 (26.63%)
+2026/08/30 17:24:12 Downloaded piece 274/1025 (26.73%)
+2026/08/30 17:24:13 Downloaded piece 275/1025 (26.83%)
+2026/08/30 17:24:13 Downloaded piece 276/1025 (26.93%)
+2026/08/30 17:24:14 Downloaded piece 277/1025 (27.02%)
+2026/08/30 17:24:15 Downloaded piece 278/1025 (27.12%)
+2026/08/30 17:24:15 Downloaded piece 279/1025 (27.22%)
+2026/08/30 17:24:16 Downloaded piece 280/1025 (27.32%)
+2026/08/30 17:24:17 Downloaded piece 281/1025 (27.41%)
+2026/08/30 17:24:17 Downloaded piece 282/1025 (27.51%)
+2026/08/30 17:24:18 Downloaded piece 283/1025 (27.61%)
+2026/08/30 17:24:18 Downloaded piece 284/1025 (27.71%)
+2026/08/30 17:24:18 Downloaded piece 285/1025 (27.80%)
+2026/08/30 17:24:19 Downloaded piece 286/1025 (27.90%)
+2026/08/30 17:24:20 Downloaded piece 287/1025 (28.00%)
+2026/08/30 17:24:20 Downloaded piece 288/1025 (28.10%)
+2026/08/30 17:24:21 Downloaded piece 289/1025 (28.20%)
+2026/08/30 17:24:22 Downloaded piece 290/1025 (28.29%)
+2026/08/30 17:24:22 Downloaded piece 291/1025 (28.39%)
+2026/08/30 17:24:23 Downloaded piece 292/1025 (28.49%)
+2026/08/30 17:24:24 Downloaded piece 293/1025 (28.59%)
+2026/08/30 17:24:24 Downloaded piece 294/1025 (28.68%)
+2026/08/30 17:24:25 Downloaded piece 295/1025 (28.78%)
+2026/08/30 17:24:26 Downloaded piece 296/1025 (28.88%)

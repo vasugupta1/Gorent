@@ -1,6 +1,7 @@
 package client
 
 import (
+	"context"
 	"log"
 	"net"
 	"time"
@@ -29,7 +30,7 @@ type PeerState struct {
 }
 
 // peerWorker connects to a peer and continuously processes piece work from the workQueue.
-func peerWorker(p peer.Peer, infoHash, peerID [20]byte, workQueue chan pieceWork, results chan pieceResult) {
+func peerWorker(ctx context.Context, c *Client, p peer.Peer, infoHash, peerID [20]byte, workQueue chan pieceWork, results chan pieceResult) {
 	conn, err := net.DialTimeout("tcp", p.String(), 5*time.Second)
 	if err != nil {
 		return
@@ -45,16 +46,46 @@ func peerWorker(p peer.Peer, infoHash, peerID [20]byte, workQueue chan pieceWork
 	}
 
 	// We are connected and handshaked. Process work queue.
-	for pw := range workQueue {
+	for {
+		var pw pieceWork
+		var ok bool
+		
+		c.Mu.Lock()
+		for c.paused && !c.IsRemoved {
+			c.pauseCond.Wait()
+		}
+		if c.IsRemoved {
+			c.Mu.Unlock()
+			return
+		}
+		c.Mu.Unlock()
+
+		select {
+		case <-ctx.Done():
+			return
+		case pw, ok = <-workQueue:
+			if !ok {
+				return
+			}
+		}
+
 		buf, err := attemptDownloadPiece(conn, pw)
 		if err != nil {
 			log.Printf("Worker %s failed piece %d: %v", p.String(), pw.index, err)
-			workQueue <- pw // Put the work back on the queue
+			select {
+			case <-ctx.Done():
+				return
+			case workQueue <- pw: // Put the work back on the queue
+			}
 			return          // Disconnect and exit worker
 		}
 
 		// Success!
-		results <- pieceResult{index: pw.index, buf: buf}
+		select {
+		case <-ctx.Done():
+			return
+		case results <- pieceResult{index: pw.index, buf: buf}:
+		}
 	}
 }
 

@@ -6,47 +6,37 @@ import (
 	"log"
 	"os"
 
-	"github.com/vasugupta1/Gorent/internal/client"
-	"github.com/vasugupta1/Gorent/internal/magnet"
-	"github.com/vasugupta1/Gorent/internal/peer"
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/vasugupta1/Gorent/internal/engine"
+	"github.com/vasugupta1/Gorent/internal/tui"
 )
 
 func main() {
-	magnetURI := flag.String("magnet", "", "Magnet URI to download")
+	// Redirect standard log output to a file so it doesn't mess up the TUI
+	f, err := os.OpenFile("gorent.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	if err == nil {
+		log.SetOutput(f)
+		defer f.Close()
+	}
+
+	magnetURI := flag.String("magnet", "", "Optional: Magnet URI to start downloading immediately")
 	flag.Parse()
 
-	if *magnetURI == "" {
-		fmt.Println("Usage: gorent -magnet <magnet-uri>")
+	// Initialize the download directory
+	os.MkdirAll("downloads", 0755)
+
+	manager := engine.NewTorrentManager()
+
+	if *magnetURI != "" {
+		err := manager.AddMagnet(*magnetURI, "downloads")
+		if err != nil {
+			log.Fatalf("Failed to add initial magnet link: %v", err)
+		}
+	}
+
+	p := tea.NewProgram(tui.InitialModel(manager), tea.WithAltScreen())
+	if _, err := p.Run(); err != nil {
+		fmt.Printf("Alas, there's been an error: %v", err)
 		os.Exit(1)
-	}
-
-	fmt.Println("Gorent: Starting up...")
-
-	// 1. Parse Magnet URI
-	mag, err := magnet.Parse(*magnetURI)
-	if err != nil {
-		log.Fatalf("Failed to parse magnet link: %v", err)
-	}
-	fmt.Printf("InfoHash: %x\n", mag.InfoHash)
-	fmt.Printf("Name: %s\n", mag.DisplayName)
-	fmt.Printf("Trackers: %v\n", mag.Trackers)
-
-	// 2. Generate Peer ID
-	myPeerID, err := peer.GeneratePeerID()
-	if err != nil {
-		log.Fatalf("Failed to generate peer ID: %v", err)
-	}
-	fmt.Printf("My Peer ID: %s\n", string(myPeerID[:]))
-
-	c := &client.Client{
-		InfoHash: mag.InfoHash,
-		PeerID:   myPeerID,
-		Trackers: mag.Trackers,
-		Port:     6881,
-	}
-
-	err = c.Start("downloads")
-	if err != nil {
-		log.Fatalf("Client failed: %v", err)
 	}
 }

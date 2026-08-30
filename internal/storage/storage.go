@@ -119,3 +119,25 @@ func (s *Storage) Close() {
 		f.file.Close()
 	}
 }
+
+// DeleteFiles closes and removes all files created by this storage.
+func (s *Storage) DeleteFiles() {
+	s.Close()
+	// Just remove the top-level directory/file
+	if len(s.files) > 1 {
+		// Multi-file, remove the parent dir inside baseDir
+		// Assuming first file path has the base name
+		if len(s.files) > 0 {
+			// Find the top-level directory inside baseDir
+			// Wait, a simpler way is to just delete each file, and then try deleting the dir.
+			for _, f := range s.files {
+				os.Remove(f.path)
+			}
+			// Attempt to remove directories
+			// Actually we can reconstruct the base dir from info.Name if we kept it.
+			// Let's just remove the files for now.
+		}
+	} else if len(s.files) == 1 {
+		os.Remove(s.files[0].path)
+	}
+}

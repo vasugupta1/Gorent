@@ -14,17 +14,35 @@ import (
 )
 
 type Client struct {
-	InfoHash [20]byte
-	PeerID   [20]byte
-	Trackers []string
-	Port     uint16
+	Name        string
+	InfoHash    [20]byte
+	PeerID      [20]byte
+	Trackers    []string
+	Port        uint16
 
 	TorrentInfo *metadata.TorrentInfo
 	Storage     *storage.Storage
+
+	Mu          sync.Mutex
+	Status      string
+	DonePieces  int
+	TotalPieces int
+
+	cancel      context.CancelFunc
+	paused      bool
+	pauseCond   *sync.Cond
+	IsRemoved   bool
 }
 
 // Start begins the torrent download process.
 func (c *Client) Start(downloadsDir string) error {
+	c.Mu.Lock()
+	c.Status = "Starting"
+	c.pauseCond = sync.NewCond(&c.Mu)
+	ctx, cancel := context.WithCancel(context.Background())
+	c.cancel = cancel
+	c.Mu.Unlock()
+	defer cancel()
 	// 1. Get Peers from Trackers concurrently
 	var peers []peer.Peer
 	var peerMutex sync.Mutex
@@ -61,11 +79,15 @@ func (c *Client) Start(downloadsDir string) error {
 	case <-time.After(5 * time.Second):
 		log.Println("Timeout waiting for trackers. Proceeding with found peers...")
 	}
+	
+	c.Mu.Lock()
+	c.Status = fmt.Sprintf("Found %d peers. Fetching metadata...", len(peers))
+	c.Mu.Unlock()
 	log.Printf("Found %d peers. Attempting to fetch metadata...", len(peers))
 
 	metaChan := make(chan []byte)
-	ctx, cancel := context.WithCancel(context.Background())
-	defer cancel()
+	metaCtx, metaCancel := context.WithCancel(ctx)
+	defer metaCancel()
 
 	var wg sync.WaitGroup
 	for _, p := range peers {
@@ -75,7 +97,7 @@ func (c *Client) Start(downloadsDir string) error {
 
 			// Check if we've already found metadata before trying
 			select {
-			case <-ctx.Done():
+			case <-metaCtx.Done():
 				return
 			default:
 			}
@@ -85,7 +107,7 @@ func (c *Client) Start(downloadsDir string) error {
 				select {
 				case metaChan <- meta:
 					log.Printf("Successfully fetched metadata from %s", pr.String())
-				case <-ctx.Done():
+				case <-metaCtx.Done():
 					// Another goroutine already succeeded
 				}
 			}
@@ -103,7 +125,7 @@ func (c *Client) Start(downloadsDir string) error {
 	case meta, ok := <-metaChan:
 		if ok && meta != nil {
 			rawMetadata = meta
-			cancel() // Cancel other metadata fetchers
+			metaCancel() // Cancel other metadata fetchers
 		}
 	}
 
@@ -129,6 +151,14 @@ func (c *Client) Start(downloadsDir string) error {
 	// 4. Download Pieces Concurrently
 	hashes := c.TorrentInfo.PieceHashes()
 	numPieces := len(hashes)
+	
+	c.Mu.Lock()
+	c.Name = c.TorrentInfo.Name
+	c.TotalPieces = numPieces
+	c.DonePieces = 0
+	c.Status = "Downloading"
+	c.Mu.Unlock()
+	
 	log.Printf("Starting concurrent download of %d pieces...", numPieces)
 
 	workQueue := make(chan pieceWork, numPieces)
@@ -149,27 +179,87 @@ func (c *Client) Start(downloadsDir string) error {
 	// Start workers for each peer
 	log.Printf("Launching %d workers...", len(peers))
 	for _, p := range peers {
-		go peerWorker(p, c.InfoHash, c.PeerID, workQueue, results)
+		go peerWorker(ctx, c, p, c.InfoHash, c.PeerID, workQueue, results)
 	}
 
 	// Collect results
 	donePieces := 0
 	for donePieces < numPieces {
-		res := <-results
-
-		// Verify hash
-		err := c.Storage.WritePiece(res.index, c.TorrentInfo.PieceLength, res.buf, hashes[res.index])
-		if err != nil {
-			log.Printf("Piece %d failed hash check: %v. Requeueing...", res.index, err)
-			workQueue <- pieceWork{index: res.index, hash: hashes[res.index], length: len(res.buf)}
-			continue
+		c.Mu.Lock()
+		for c.paused && !c.IsRemoved {
+			c.pauseCond.Wait()
 		}
+		if c.IsRemoved {
+			c.Mu.Unlock()
+			return fmt.Errorf("torrent removed")
+		}
+		c.Mu.Unlock()
 
-		donePieces++
-		log.Printf("Downloaded piece %d/%d (%.2f%%)", donePieces, numPieces, float64(donePieces)/float64(numPieces)*100)
+		select {
+		case <-ctx.Done():
+			return fmt.Errorf("download cancelled")
+		case res := <-results:
+			// Verify hash
+			err := c.Storage.WritePiece(res.index, c.TorrentInfo.PieceLength, res.buf, hashes[res.index])
+			if err != nil {
+				log.Printf("Piece %d failed hash check: %v. Requeueing...", res.index, err)
+				select {
+				case <-ctx.Done():
+					return fmt.Errorf("download cancelled")
+				case workQueue <- pieceWork{index: res.index, hash: hashes[res.index], length: len(res.buf)}:
+				}
+				continue
+			}
+
+			donePieces++
+			c.Mu.Lock()
+			c.DonePieces = donePieces
+			c.Mu.Unlock()
+			log.Printf("Downloaded piece %d/%d (%.2f%%)", donePieces, numPieces, float64(donePieces)/float64(numPieces)*100)
+		}
 	}
 
 	close(workQueue)
+	c.Mu.Lock()
+	c.Status = "Completed"
+	c.Mu.Unlock()
 	log.Println("Download complete!")
 	return nil
+}
+
+func (c *Client) Pause() {
+	c.Mu.Lock()
+	defer c.Mu.Unlock()
+	if !c.paused && c.Status == "Downloading" {
+		c.paused = true
+		c.Status = "Paused"
+	}
+}
+
+func (c *Client) Resume() {
+	c.Mu.Lock()
+	defer c.Mu.Unlock()
+	if c.paused {
+		c.paused = false
+		c.Status = "Downloading"
+		c.pauseCond.Broadcast()
+	}
+}
+
+func (c *Client) Remove() {
+	c.Mu.Lock()
+	c.IsRemoved = true
+	c.Status = "Removed"
+	if c.cancel != nil {
+		c.cancel()
+	}
+	if c.pauseCond != nil {
+		c.pauseCond.Broadcast()
+	}
+	
+	// Delete files if Storage is initialized
+	if c.Storage != nil {
+		c.Storage.DeleteFiles()
+	}
+	c.Mu.Unlock()
 }
