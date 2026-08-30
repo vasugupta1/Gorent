@@ -25,7 +25,10 @@ func main() {
 	// Initialize the download directory
 	os.MkdirAll("downloads", 0755)
 
-	manager := engine.NewTorrentManager()
+	manager, err := engine.NewTorrentManager("torrents.db", "downloads")
+	if err != nil {
+		log.Fatalf("Failed to initialize manager: %v", err)
+	}
 
 	if *magnetURI != "" {
 		err := manager.AddMagnet(*magnetURI, "downloads")

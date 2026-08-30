@@ -19,6 +19,7 @@ type Client struct {
 	PeerID      [20]byte
 	Trackers    []string
 	Port        uint16
+	MagnetURI   string
 
 	TorrentInfo *metadata.TorrentInfo
 	Storage     *storage.Storage
@@ -27,6 +28,7 @@ type Client struct {
 	Status      string
 	DonePieces  int
 	TotalPieces int
+	Bitfield    []byte
 
 	cancel      context.CancelFunc
 	paused      bool
@@ -37,7 +39,11 @@ type Client struct {
 // Start begins the torrent download process.
 func (c *Client) Start(downloadsDir string) error {
 	c.Mu.Lock()
-	c.Status = "Starting"
+	wasPaused := c.Status == "Paused"
+	if !wasPaused {
+		c.Status = "Starting"
+	}
+	c.paused = wasPaused
 	c.pauseCond = sync.NewCond(&c.Mu)
 	ctx, cancel := context.WithCancel(context.Background())
 	c.cancel = cancel
@@ -155,8 +161,20 @@ func (c *Client) Start(downloadsDir string) error {
 	c.Mu.Lock()
 	c.Name = c.TorrentInfo.Name
 	c.TotalPieces = numPieces
-	c.DonePieces = 0
-	c.Status = "Downloading"
+	if len(c.Bitfield) < (numPieces+7)/8 {
+		c.Bitfield = make([]byte, (numPieces+7)/8)
+	}
+	doneCount := 0
+	for i := 0; i < numPieces; i++ {
+		if c.Bitfield[i/8]&(1<<(i%8)) != 0 {
+			doneCount++
+		}
+	}
+	c.DonePieces = doneCount
+	
+	if c.Status != "Paused" {
+		c.Status = "Downloading"
+	}
 	c.Mu.Unlock()
 	
 	log.Printf("Starting concurrent download of %d pieces...", numPieces)
@@ -166,6 +184,9 @@ func (c *Client) Start(downloadsDir string) error {
 
 	// Populate the work queue
 	for i, hash := range hashes {
+		if c.Bitfield[i/8]&(1<<(i%8)) != 0 {
+			continue // skip already downloaded
+		}
 		pieceLen := c.TorrentInfo.PieceLength
 		if i == numPieces-1 {
 			pieceLen = c.TorrentInfo.Length % c.TorrentInfo.PieceLength
@@ -176,6 +197,7 @@ func (c *Client) Start(downloadsDir string) error {
 		workQueue <- pieceWork{index: i, hash: hash, length: pieceLen}
 	}
 
+
 	// Start workers for each peer
 	log.Printf("Launching %d workers...", len(peers))
 	for _, p := range peers {
@@ -183,7 +205,7 @@ func (c *Client) Start(downloadsDir string) error {
 	}
 
 	// Collect results
-	donePieces := 0
+	donePieces := c.DonePieces
 	for donePieces < numPieces {
 		c.Mu.Lock()
 		for c.paused && !c.IsRemoved {
@@ -214,6 +236,7 @@ func (c *Client) Start(downloadsDir string) error {
 			donePieces++
 			c.Mu.Lock()
 			c.DonePieces = donePieces
+			c.Bitfield[res.index/8] |= (1 << (res.index % 8))
 			c.Mu.Unlock()
 			log.Printf("Downloaded piece %d/%d (%.2f%%)", donePieces, numPieces, float64(donePieces)/float64(numPieces)*100)
 		}
