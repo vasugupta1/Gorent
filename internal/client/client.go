@@ -179,29 +179,13 @@ func (c *Client) Start(downloadsDir string) error {
 	
 	log.Printf("Starting concurrent download of %d pieces...", numPieces)
 
-	workQueue := make(chan pieceWork, numPieces)
+	pm := NewPieceManager(numPieces, c.Bitfield)
 	results := make(chan pieceResult)
-
-	// Populate the work queue
-	for i, hash := range hashes {
-		if c.Bitfield[i/8]&(1<<(i%8)) != 0 {
-			continue // skip already downloaded
-		}
-		pieceLen := c.TorrentInfo.PieceLength
-		if i == numPieces-1 {
-			pieceLen = c.TorrentInfo.Length % c.TorrentInfo.PieceLength
-			if pieceLen == 0 {
-				pieceLen = c.TorrentInfo.PieceLength
-			}
-		}
-		workQueue <- pieceWork{index: i, hash: hash, length: pieceLen}
-	}
-
 
 	// Start workers for each peer
 	log.Printf("Launching %d workers...", len(peers))
 	for _, p := range peers {
-		go peerWorker(ctx, c, p, c.InfoHash, c.PeerID, workQueue, results)
+		go peerWorker(ctx, c, p, c.InfoHash, c.PeerID, pm, results)
 	}
 
 	// Collect results
@@ -225,16 +209,16 @@ func (c *Client) Start(downloadsDir string) error {
 			err := c.Storage.WritePiece(res.index, c.TorrentInfo.PieceLength, res.buf, hashes[res.index])
 			if err != nil {
 				log.Printf("Piece %d failed hash check: %v. Requeueing...", res.index, err)
-				select {
-				case <-ctx.Done():
-					return fmt.Errorf("download cancelled")
-				case workQueue <- pieceWork{index: res.index, hash: hashes[res.index], length: len(res.buf)}:
-				}
+				pm.SetFailed(res.index)
 				continue
 			}
 
-			donePieces++
 			c.Mu.Lock()
+			if c.Bitfield[res.index/8]&(1<<(res.index%8)) != 0 {
+				c.Mu.Unlock()
+				continue // already done
+			}
+			donePieces++
 			c.DonePieces = donePieces
 			c.Bitfield[res.index/8] |= (1 << (res.index % 8))
 			c.Mu.Unlock()
@@ -242,7 +226,6 @@ func (c *Client) Start(downloadsDir string) error {
 		}
 	}
 
-	close(workQueue)
 	c.Mu.Lock()
 	c.Status = "Completed"
 	c.Mu.Unlock()
