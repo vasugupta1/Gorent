@@ -96,7 +96,7 @@ func NewTorrentManager(dbPath, downloadsDir string) (*TorrentManager, error) {
 	return m, nil
 }
 
-func (m *TorrentManager) AddMagnet(magnetURI string, downloadsDir string) error {
+func (m *TorrentManager) AddMagnet(magnetURI string) error {
 	mag, err := magnet.Parse(magnetURI)
 	if err != nil {
 		return err
@@ -122,7 +122,7 @@ func (m *TorrentManager) AddMagnet(magnetURI string, downloadsDir string) error 
 	m.mu.Unlock()
 
 	go func() {
-		err := c.Start(downloadsDir)
+		err := c.Start(m.downDir)
 		if err != nil {
 			c.Mu.Lock()
 			c.Status = "Error: " + err.Error()
@@ -133,6 +133,14 @@ func (m *TorrentManager) AddMagnet(magnetURI string, downloadsDir string) error 
 
 	return nil
 }
+
+func (m *TorrentManager) SetDownloadDir(dir string) error {
+	m.mu.Lock()
+	m.downDir = dir
+	m.mu.Unlock()
+	return m.db.SaveSetting("download_dir", dir)
+}
+
 
 func (m *TorrentManager) GetClients() []*client.Client {
 	m.mu.Lock()

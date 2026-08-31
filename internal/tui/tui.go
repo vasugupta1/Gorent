@@ -2,6 +2,7 @@ package tui
 
 import (
 	"fmt"
+	"os"
 	"strings"
 	"time"
 
@@ -22,28 +23,45 @@ func tickCmd() tea.Cmd {
 type model struct {
 	manager       *engine.TorrentManager
 	textInput     textinput.Model
+	dirInput      textinput.Model
 	adding        bool
+	promptingDir  bool
 	err           error
 	selectedIndex int
+	initMagnetURI string
 }
 
-func InitialModel(manager *engine.TorrentManager) model {
+func InitialModel(manager *engine.TorrentManager, needsDirPrompt bool, magnetURI string) model {
 	ti := textinput.New()
 	ti.Placeholder = "Paste magnet link here"
-	ti.Focus()
 	ti.CharLimit = 500
 	ti.Width = 50
+
+	di := textinput.New()
+	di.Placeholder = "e.g., downloads/"
+	di.CharLimit = 200
+	di.Width = 50
+
+	if needsDirPrompt {
+		di.Focus()
+	}
 
 	return model{
 		manager:       manager,
 		textInput:     ti,
+		dirInput:      di,
 		adding:        false,
+		promptingDir:  needsDirPrompt,
 		err:           nil,
 		selectedIndex: 0,
+		initMagnetURI: magnetURI,
 	}
 }
 
 func (m model) Init() tea.Cmd {
+	if m.initMagnetURI != "" && !m.promptingDir {
+		m.manager.AddMagnet(m.initMagnetURI)
+	}
 	return tea.Batch(tickCmd(), textinput.Blink)
 }
 
@@ -54,6 +72,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.KeyMsg:
 		switch msg.Type {
 		case tea.KeyCtrlC, tea.KeyEsc:
+			if m.promptingDir {
+				return m, tea.Quit
+			}
 			if m.adding {
 				m.adding = false
 				m.textInput.SetValue("")
@@ -61,10 +82,26 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 			return m, tea.Quit
 		case tea.KeyEnter:
+			if m.promptingDir {
+				dir := m.dirInput.Value()
+				dir = strings.TrimSpace(dir)
+				if dir == "" {
+					dir = "downloads"
+				}
+				os.MkdirAll(dir, 0755)
+				m.manager.SetDownloadDir(dir)
+				m.promptingDir = false
+				
+				if m.initMagnetURI != "" {
+					m.manager.AddMagnet(m.initMagnetURI)
+					m.initMagnetURI = ""
+				}
+				return m, nil
+			}
 			if m.adding {
 				uri := m.textInput.Value()
 				if uri != "" {
-					err := m.manager.AddMagnet(uri, "downloads")
+					err := m.manager.AddMagnet(uri)
 					if err != nil {
 						m.err = err
 					} else {
@@ -76,14 +113,14 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				return m, nil
 			}
 		case tea.KeyUp:
-			if !m.adding {
+			if !m.adding && !m.promptingDir {
 				m.selectedIndex--
 				if m.selectedIndex < 0 {
 					m.selectedIndex = 0
 				}
 			}
 		case tea.KeyDown:
-			if !m.adding {
+			if !m.adding && !m.promptingDir {
 				m.selectedIndex++
 				clients := m.manager.GetClients()
 				if m.selectedIndex >= len(clients) {
@@ -95,7 +132,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 		}
 
-		if !m.adding {
+		if !m.adding && !m.promptingDir {
 			switch msg.String() {
 			case "q":
 				return m, tea.Quit
@@ -123,6 +160,11 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		return m, tickCmd()
 	}
 
+	if m.promptingDir {
+		m.dirInput, cmd = m.dirInput.Update(msg)
+		return m, cmd
+	}
+
 	if m.adding {
 		m.textInput, cmd = m.textInput.Update(msg)
 		return m, cmd
@@ -132,6 +174,15 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m model) View() string {
+	if m.promptingDir {
+		var s strings.Builder
+		s.WriteString(lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("205")).Render("Gorent - Initial Setup"))
+		s.WriteString("\n\nWhere do you want to put downloaded files?\n\n")
+		s.WriteString(m.dirInput.View())
+		s.WriteString("\n\n(Press Enter to confirm, leave empty for 'downloads')")
+		return s.String()
+	}
+
 	var s strings.Builder
 
 	s.WriteString(lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("205")).Render("Gorent - Torrent Manager"))

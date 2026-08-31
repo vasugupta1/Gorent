@@ -33,12 +33,39 @@ func InitDB(filepath string) (*DB, error) {
 		status TEXT,
 		downloaded_pieces BLOB,
 		total_pieces INTEGER
+	);
+	CREATE TABLE IF NOT EXISTS settings (
+		key TEXT PRIMARY KEY,
+		value TEXT
 	);`
 	if _, err := conn.Exec(createTableQuery); err != nil {
 		return nil, err
 	}
 
 	return &DB{conn: conn}, nil
+}
+
+func (db *DB) Close() error {
+	return db.conn.Close()
+}
+
+func (db *DB) SaveSetting(key, value string) error {
+	query := `
+	INSERT INTO settings (key, value)
+	VALUES (?, ?)
+	ON CONFLICT(key) DO UPDATE SET value=excluded.value;
+	`
+	_, err := db.conn.Exec(query, key, value)
+	return err
+}
+
+func (db *DB) GetSetting(key string) (string, error) {
+	var value string
+	err := db.conn.QueryRow("SELECT value FROM settings WHERE key = ?", key).Scan(&value)
+	if err == sql.ErrNoRows {
+		return "", nil // Or maybe return an error, but let's just return empty string
+	}
+	return value, err
 }
 
 func (db *DB) SaveTorrent(state TorrentState) error {
