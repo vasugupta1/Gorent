@@ -1,0 +1,65 @@
+version: 2
+
+project_name: gorent
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    main: ./cmd/gorent
+    binary: gorent
+    ldflags:
+      - -s -w
+
+archives:
+  - format: tar.gz
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- title .Os }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "386" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+
+nfpms:
+  - id: gorent
+    package_name: gorent
+    file_name_template: >-
+      {{ .ProjectName }}_
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "386" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+    vendor: "Vasu Gupta"
+    homepage: "https://github.com/vasugupta1/Gorent"
+    maintainer: "Vasu Gupta"
+    description: "A fast, Terminal User Interface (TUI) based Torrent Manager written in Go."
+    license: "MIT"
+    formats:
+      - deb
+      - rpm
+    bindir: /usr/bin
+
+release:
+  github:
+    owner: vasugupta1
+    name: Gorent
+
+brews:
+  - repository:
+      owner: vasugupta1
+      name: homebrew-tap
+    directory: Formula
+    homepage: "https://github.com/vasugupta1/Gorent"
+    description: "A fast, Terminal User Interface (TUI) based Torrent Manager written in Go."
+    license: "MIT"
