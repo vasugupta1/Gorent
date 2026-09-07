@@ -55,11 +55,11 @@ release:
     owner: vasugupta1
     name: Gorent
 
-brews:
-  - repository:
-      owner: vasugupta1
-      name: homebrew-tap
-    directory: Formula
-    homepage: "https://github.com/vasugupta1/Gorent"
-    description: "A fast, Terminal User Interface (TUI) based Torrent Manager written in Go."
-    license: "MIT"
+# brews:
+#   - repository:
+#       owner: vasugupta1
+#       name: homebrew-tap
+#     directory: Formula
+#     homepage: "https://github.com/vasugupta1/Gorent"
+#     description: "A fast, Terminal User Interface (TUI) based Torrent Manager written in Go."
+#     license: "MIT"
