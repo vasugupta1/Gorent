@@ -3,7 +3,7 @@ package db
 import (
 	"database/sql"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 type DB struct {
@@ -20,7 +20,7 @@ type TorrentState struct {
 }
 
 func InitDB(filepath string) (*DB, error) {
-	conn, err := sql.Open("sqlite3", filepath)
+	conn, err := sql.Open("sqlite", filepath)
 	if err != nil {
 		return nil, err
 	}
