@@ -30,6 +30,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           default_bump: patch # Automatically bumps the patch version (e.g., v1.0.0 -> v1.0.1)
 
+      - name: Fetch new tag
+        run: git fetch --tags origin
+
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v5
         with:
